@@ -7,4 +7,20 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="Rectangle 3.png" />
+    <None Remove="🦆 icon _attachment_.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Rectangle 3.png" />
+    <Resource Include="🦆 icon _attachment_.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="MainWindow.xaml.cs">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Compile>
+  </ItemGroup>
+
 </Project>
