@@ -11,7 +11,7 @@
         <Rectangle Height="116" Width="1550" Fill="#FF5D1D8E" VerticalAlignment="Top"/>
         <Label Content="Employee" Height="58" VerticalAlignment="Top" Width="260" HorizontalAlignment="Center" Background="#00000000" Foreground="#FFF7F1FF" HorizontalContentAlignment="Center" FontSize="44" RenderTransformOrigin="0.489,0.059" FontFamily="Franklin Gothic Medium Cond" FontWeight="Bold" Margin="600,26,600,29" />
 
-        <TextBox HorizontalAlignment="Left" Margin="90,185,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="296" BorderThickness="2,2,2,2" BorderBrush="#FF5D1D8E" Height="33" FontSize="20" Background="#FFF7F1FF">
+        <TextBox x:Name="FirstName" HorizontalAlignment="Left" Margin="90,185,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="296" BorderThickness="2,2,2,2" BorderBrush="#FF5D1D8E" Height="40" FontSize="20" Background="#FFF7F1FF" Padding="10,3,10,0">
             <TextBox.Resources>
                 <Style TargetType="{x:Type Border}">
                     <Setter Property="CornerRadius" Value="20"/>
@@ -21,7 +21,7 @@
         <Label Content="First Name" HorizontalAlignment="Left" Margin="90,152,0,0" VerticalAlignment="Top" Foreground="#FF5D1D8E" FontFamily="Gill Sans MT" FontSize="20"/>
         <Label Content="*" HorizontalAlignment="Left" Margin="392,188,0,0" VerticalAlignment="Top" Foreground="#FF5D1D8E" FontSize="20"/>
 
-        <TextBox HorizontalAlignment="Left" Margin="90,291,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="296" BorderThickness="2,2,2,2" BorderBrush="#FF5D1D8E" Height="33" FontSize="20" Background="#FFF7F1FF">
+        <TextBox x:Name="NationalCode" HorizontalAlignment="Left" Margin="90,291,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="296" BorderThickness="2,2,2,2" BorderBrush="#FF5D1D8E" Height="40" FontSize="20" Background="#FFF7F1FF" Padding="10,3,10,0">
             <TextBox.Resources>
                 <Style TargetType="{x:Type Border}">
                     <Setter Property="CornerRadius" Value="20"/>
@@ -32,7 +32,7 @@
         <Label Content="*" HorizontalAlignment="Left" Margin="392,293,0,0" VerticalAlignment="Top" Foreground="#FF5D1D8E" FontSize="20"/>
 
         <Label Content="Birth Date&#xD;&#xA;" HorizontalAlignment="Left" Margin="90,364,0,0" VerticalAlignment="Top" Foreground="#FF5D1D8E" FontFamily="Gill Sans MT" FontSize="20"/>
-        <DatePicker HorizontalAlignment="Left" Margin="93,715,0,0" VerticalAlignment="Top" Width="296" Height="33" Foreground="#FF5D1D8E" Background="#FFF7F1FF" FontSize="20" FontFamily="Gill Sans MT" FontStyle="Italic" BorderThickness="2,2,2,2" BorderBrush="#FF5D1D8E">
+        <DatePicker x:Name="StartDate" HorizontalAlignment="Left" Margin="93,715,0,0" VerticalAlignment="Top" Width="296" Height="40" Foreground="#FF5D1D8E" Background="#FFF7F1FF" FontSize="20" FontFamily="Gill Sans MT" FontStyle="Italic" BorderThickness="2,2,2,2" BorderBrush="#FF5D1D8E" Padding="4,5,2,0">
             <DatePicker.Resources>
                 <Style TargetType="{x:Type Border}">
                     <Setter Property="CornerRadius" Value="13" />
@@ -41,7 +41,7 @@
         </DatePicker>
         <Label Content="*" HorizontalAlignment="Left" Margin="392,399,0,0" VerticalAlignment="Top" Foreground="#FF5D1D8E" FontSize="20"/>
 
-        <TextBox HorizontalAlignment="Left" Margin="90,503,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="296" BorderThickness="2,2,2,2" BorderBrush="#FF5D1D8E" Height="33" FontSize="20" Background="#FFF7F1FF">
+        <TextBox x:Name="TelNumber" HorizontalAlignment="Left" Margin="90,503,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="296" BorderThickness="2,2,2,2" BorderBrush="#FF5D1D8E" Height="40" FontSize="20" Background="#FFF7F1FF" Padding="10,3,10,0">
             <TextBox.Resources>
                 <Style TargetType="{x:Type Border}">
                     <Setter Property="CornerRadius" Value="20"/>
@@ -50,7 +50,7 @@
         </TextBox>
         <Label Content="Tel Number&#xD;&#xA;&#xA;" HorizontalAlignment="Left" Margin="90,470,0,0" VerticalAlignment="Top" Foreground="#FF5D1D8E" FontFamily="Gill Sans MT" FontSize="20"/>
 
-        <TextBox HorizontalAlignment="Left" Margin="90,609,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="296" BorderThickness="2,2,2,2" BorderBrush="#FF5D1D8E" Height="33" FontSize="20" Background="#FFF7F1FF">
+        <TextBox x:Name="MartialStatus" HorizontalAlignment="Left" Margin="90,609,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="296" BorderThickness="2,2,2,2" BorderBrush="#FF5D1D8E" Height="40" FontSize="20" Background="#FFF7F1FF" Padding="10,3,10,0">
             <TextBox.Resources>
                 <Style TargetType="{x:Type Border}">
                     <Setter Property="CornerRadius" Value="20"/>
@@ -60,7 +60,7 @@
         <Label Content="Marital Status&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xA;" HorizontalAlignment="Left" Margin="90,575,0,0" VerticalAlignment="Top" Foreground="#FF5D1D8E" FontFamily="Gill Sans MT" FontSize="20"/>
 
         <Label Content="Start Date&#xD;&#xA;" HorizontalAlignment="Left" Margin="90,681,0,0" VerticalAlignment="Top" Foreground="#FF5D1D8E" FontFamily="Gill Sans MT" FontSize="20"/>
-        <DatePicker HorizontalAlignment="Left" Margin="1083,715,0,0" VerticalAlignment="Top" Width="296" Height="33" Foreground="#FF5D1D8E" Background="#FFF7F1FF" FontSize="20" FontFamily="Gill Sans MT" FontStyle="Italic" BorderThickness="2,2,2,2" BorderBrush="#FF5D1D8E">
+        <DatePicker x:Name="EndDate" HorizontalAlignment="Left" Margin="1083,715,0,0" VerticalAlignment="Top" Width="296" Height="40" Foreground="#FF5D1D8E" Background="#FFF7F1FF" FontSize="20" FontFamily="Gill Sans MT" FontStyle="Italic" BorderThickness="2,2,2,2" BorderBrush="#FF5D1D8E" Padding="4,5,0,0">
             <DatePicker.Resources>
                 <Style TargetType="{x:Type Border}">
                     <Setter Property="CornerRadius" Value="13" />
@@ -69,17 +69,17 @@
         </DatePicker>
         <Label Content="*" HorizontalAlignment="Left" Margin="392,716,0,0" VerticalAlignment="Top" Foreground="#FF5D1D8E" FontSize="20"/>
 
-        <TextBox HorizontalAlignment="Left" Margin="90,821,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="296" BorderThickness="2,2,2,2" BorderBrush="#FF5D1D8E" Height="33" FontSize="20" Background="#FFF7F1FF">
+        <TextBox x:Name="BAInfo" HorizontalAlignment="Left" Margin="90,821,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="296" BorderThickness="2,2,2,2" BorderBrush="#FF5D1D8E" Height="40" FontSize="20" Background="#FFF7F1FF" AcceptsReturn="True" Padding="10,3,10,0">
             <TextBox.Resources>
                 <Style TargetType="{x:Type Border}">
                     <Setter Property="CornerRadius" Value="20"/>
                 </Style>
             </TextBox.Resources>
         </TextBox>
-        <Label Content="Bank Account Number&#xD;&#xA;&#xA;&#xA;&#xA;&#xA;" HorizontalAlignment="Left" Margin="90,787,0,0" VerticalAlignment="Top" Foreground="#FF5D1D8E" FontFamily="Gill Sans MT" FontSize="20" Height="29"/>
+        <Label Content="Bank Account Information" HorizontalAlignment="Left" Margin="90,787,0,0" VerticalAlignment="Top" Foreground="#FF5D1D8E" FontFamily="Gill Sans MT" FontSize="20" Height="29"/>
         <Label Content="*" HorizontalAlignment="Left" Margin="392,823,0,0" VerticalAlignment="Top" Foreground="#FF5D1D8E" FontSize="20"/>
 
-        <TextBox HorizontalAlignment="Left" Margin="90,927,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="296" BorderThickness="2,2,2,2" BorderBrush="#FF5D1D8E" Height="33" FontSize="20" Background="#FFF7F1FF">
+        <TextBox x:Name="Address" HorizontalAlignment="Left" Margin="90,927,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="296" BorderThickness="2,2,2,2" BorderBrush="#FF5D1D8E" Height="40" FontSize="20" Background="#FFF7F1FF" AcceptsReturn="True" Padding="10,3,10,0">
             <TextBox.Resources>
                 <Style TargetType="{x:Type Border}">
                     <Setter Property="CornerRadius" Value="20"/>
@@ -89,7 +89,7 @@
         <Label Content="Address" HorizontalAlignment="Left" Margin="90,893,0,0" VerticalAlignment="Top" Foreground="#FF5D1D8E" FontFamily="Gill Sans MT" FontSize="20" Height="29"/>
         <Label Content="*" HorizontalAlignment="Left" Margin="392,928,0,0" VerticalAlignment="Top" Foreground="#FF5D1D8E" FontSize="20"/>
 
-        <TextBox HorizontalAlignment="Left" Margin="90,1033,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="296" BorderThickness="2,2,2,2" BorderBrush="#FF5D1D8E" Height="33" FontSize="20" Background="#FFF7F1FF">
+        <TextBox x:Name="agencyBranchCode" HorizontalAlignment="Left" Margin="90,1033,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="296" BorderThickness="2,2,2,2" BorderBrush="#FF5D1D8E" Height="40" FontSize="20" Background="#FFF7F1FF" Padding="10,3,10,0">
             <TextBox.Resources>
                 <Style TargetType="{x:Type Border}">
                     <Setter Property="CornerRadius" Value="20"/>
@@ -99,7 +99,7 @@
         <Label Content="Agency Branch Code" HorizontalAlignment="Left" Margin="90,997,0,0" VerticalAlignment="Top" Foreground="#FF5D1D8E" FontFamily="Gill Sans MT" FontSize="20" Height="31"/>
         <Label Content="*" HorizontalAlignment="Left" Margin="392,1034,0,0" VerticalAlignment="Top" Foreground="#FF5D1D8E" FontSize="20"/>
 
-        <TextBox HorizontalAlignment="Left" Margin="1084,185,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="296" BorderThickness="2,2,2,2" BorderBrush="#FF5D1D8E" Height="33" FontSize="20" Background="#FFF7F1FF">
+        <TextBox x:Name="LastName" HorizontalAlignment="Left" Margin="1084,185,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="296" BorderThickness="2,2,2,2" BorderBrush="#FF5D1D8E" Height="40" FontSize="20" Background="#FFF7F1FF" Padding="10,3,10,0">
             <TextBox.Resources>
                 <Style TargetType="{x:Type Border}">
                     <Setter Property="CornerRadius" Value="20"/>
@@ -109,7 +109,7 @@
         <Label Content="Last Name" HorizontalAlignment="Left" Margin="1084,152,0,0" VerticalAlignment="Top" Foreground="#FF5D1D8E" FontFamily="Gill Sans MT" FontSize="20"/>
         <Label Content="*" HorizontalAlignment="Left" Margin="1386,188,0,0" VerticalAlignment="Top" Foreground="#FF5D1D8E" FontSize="20"/>
 
-        <TextBox HorizontalAlignment="Left" Margin="1084,291,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="296" BorderThickness="2,2,2,2" BorderBrush="#FF5D1D8E" Height="33" FontSize="20" Background="#FFF7F1FF">
+        <TextBox x:Name="Email" HorizontalAlignment="Left" Margin="1084,291,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="296" BorderThickness="2,2,2,2" BorderBrush="#FF5D1D8E" Height="40" FontSize="20" Background="#FFF7F1FF" Padding="10,3,10,0">
             <TextBox.Resources>
                 <Style TargetType="{x:Type Border}">
                     <Setter Property="CornerRadius" Value="20"/>
@@ -118,7 +118,7 @@
         </TextBox>
         <Label Content="Email" HorizontalAlignment="Left" Margin="1087,258,0,0" VerticalAlignment="Top" Foreground="#FF5D1D8E" FontFamily="Gill Sans MT" FontSize="20"/>
 
-        <TextBox HorizontalAlignment="Left" Margin="1084,397,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="296" BorderThickness="2,2,2,2" BorderBrush="#FF5D1D8E" Height="33" FontSize="20" Background="#FFF7F1FF">
+        <TextBox x:Name="PhoneNumber" HorizontalAlignment="Left" Margin="1084,397,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="296" BorderThickness="2,2,2,2" BorderBrush="#FF5D1D8E" Height="40" FontSize="20" Background="#FFF7F1FF" Padding="10,3,10,0">
             <TextBox.Resources>
                 <Style TargetType="{x:Type Border}">
                     <Setter Property="CornerRadius" Value="20"/>
@@ -128,27 +128,27 @@
         <Label Content="Phone Number" HorizontalAlignment="Left" Margin="1085,364,0,0" VerticalAlignment="Top" Foreground="#FF5D1D8E" FontFamily="Gill Sans MT" FontSize="20"/>
         <Label Content="*" HorizontalAlignment="Left" Margin="1386,399,0,0" VerticalAlignment="Top" Foreground="#FF5D1D8E" FontSize="20"/>
 
-        <TextBox HorizontalAlignment="Left" Margin="1084,503,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="296" BorderThickness="2,2,2,2" BorderBrush="#FF5D1D8E" Height="33" FontSize="20" Background="#FFF7F1FF">
+        <TextBox x:Name="FathersName" HorizontalAlignment="Left" Margin="1084,503,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="296" BorderThickness="2,2,2,2" BorderBrush="#FF5D1D8E" Height="40" FontSize="20" Background="#FFF7F1FF" Padding="10,3,10,0">
             <TextBox.Resources>
                 <Style TargetType="{x:Type Border}">
                     <Setter Property="CornerRadius" Value="20"/>
                 </Style>
             </TextBox.Resources>
         </TextBox>
-        <Label Content="Fathers Name&#xA;&#xA;" HorizontalAlignment="Left" Margin="1084,470,0,0" VerticalAlignment="Top" Foreground="#FF5D1D8E" FontFamily="Gill Sans MT" FontSize="20"/>
+        <Label Content="Father's Name&#xA;&#xA;" HorizontalAlignment="Left" Margin="1084,470,0,0" VerticalAlignment="Top" Foreground="#FF5D1D8E" FontFamily="Gill Sans MT" FontSize="20"/>
 
-        <TextBox HorizontalAlignment="Left" Margin="1084,609,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="296" BorderThickness="2,2,2,2" BorderBrush="#FF5D1D8E" Height="33" FontSize="20" Background="#FFF7F1FF">
+        <TextBox x:Name="ChildNumber" HorizontalAlignment="Left" Margin="1084,609,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="296" BorderThickness="2,2,2,2" BorderBrush="#FF5D1D8E" Height="40" FontSize="20" Background="#FFF7F1FF" Padding="10,3,10,0">
             <TextBox.Resources>
                 <Style TargetType="{x:Type Border}">
                     <Setter Property="CornerRadius" Value="20"/>
                 </Style>
             </TextBox.Resources>
         </TextBox>
-        <Label Content="Child Numbers" HorizontalAlignment="Left" Margin="1085,575,0,0" VerticalAlignment="Top" Foreground="#FF5D1D8E" FontFamily="Gill Sans MT" FontSize="20"/>
+        <Label Content="Number of Children" HorizontalAlignment="Left" Margin="1085,575,0,0" VerticalAlignment="Top" Foreground="#FF5D1D8E" FontFamily="Gill Sans MT" FontSize="20"/>
         <Label Content="*" HorizontalAlignment="Left" Margin="1386,611,0,0" VerticalAlignment="Top" Foreground="#FF5D1D8E" FontSize="20"/>
 
         <Label Content="End Date" HorizontalAlignment="Left" Margin="1087,681,0,0" VerticalAlignment="Top" Foreground="#FF5D1D8E" FontFamily="Gill Sans MT" FontSize="20"/>
-        <DatePicker HorizontalAlignment="Left" Margin="93,397,0,0" VerticalAlignment="Top" Width="296" Height="33" Foreground="#FF5D1D8E" Background="#FFF7F1FF" FontSize="20" FontFamily="Gill Sans MT" FontStyle="Italic" BorderThickness="2,2,2,2" BorderBrush="#FF5D1D8E">
+        <DatePicker x:Name="BirthDate" HorizontalAlignment="Left" Margin="93,397,0,0" VerticalAlignment="Top" Width="296" Height="40" Foreground="#FF5D1D8E" Background="#FFF7F1FF" FontSize="20" FontFamily="Gill Sans MT" FontStyle="Italic" BorderThickness="2,2,2,2" BorderBrush="#FF5D1D8E" Padding="4,5,2,0">
             <DatePicker.Resources>
                 <Style TargetType="{x:Type Border}">
                     <Setter Property="CornerRadius" Value="13" />
@@ -157,17 +157,17 @@
         </DatePicker>
         <Label Content="*" HorizontalAlignment="Left" Margin="1386,716,0,0" VerticalAlignment="Top" Foreground="#FF5D1D8E" FontSize="20"/>
 
-        <TextBox HorizontalAlignment="Left" Margin="1084,821,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="296" BorderThickness="2,2,2,2" BorderBrush="#FF5D1D8E" Height="33" FontSize="20" Background="#FFF7F1FF">
+        <TextBox x:Name="FamilyNumber" HorizontalAlignment="Left" Margin="1084,821,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="296" BorderThickness="2,2,2,2" BorderBrush="#FF5D1D8E" Height="40" FontSize="20" Background="#FFF7F1FF" Padding="10,3,10,0">
             <TextBox.Resources>
                 <Style TargetType="{x:Type Border}">
                     <Setter Property="CornerRadius" Value="20"/>
                 </Style>
             </TextBox.Resources>
         </TextBox>
-        <Label Content="Family Numbers&#xA;&#xA;&#xA;&#xA;" HorizontalAlignment="Left" Margin="1085,787,0,0" VerticalAlignment="Top" Foreground="#FF5D1D8E" FontFamily="Gill Sans MT" FontSize="20"/>
+        <Label Content="Number of Family Members" HorizontalAlignment="Left" Margin="1085,787,0,0" VerticalAlignment="Top" Foreground="#FF5D1D8E" FontFamily="Gill Sans MT" FontSize="20"/>
         <Label Content="*" HorizontalAlignment="Left" Margin="1386,823,0,0" VerticalAlignment="Top" Foreground="#FF5D1D8E" FontSize="20"/>
 
-        <TextBox HorizontalAlignment="Left" Margin="1084,927,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="296" BorderThickness="2,2,2,2" BorderBrush="#FF5D1D8E" Height="33" FontSize="20" Background="#FFF7F1FF">
+        <TextBox x:Name="Sebbaticaldays" HorizontalAlignment="Left" Margin="1084,927,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="296" BorderThickness="2,2,2,2" BorderBrush="#FF5D1D8E" Height="40" FontSize="20" Background="#FFF7F1FF" Padding="10,3,10,0">
             <TextBox.Resources>
                 <Style TargetType="{x:Type Border}">
                     <Setter Property="CornerRadius" Value="20"/>
@@ -178,7 +178,7 @@
         <Label Content="*" HorizontalAlignment="Left" Margin="1386,928,0,0" VerticalAlignment="Top" Foreground="#FF5D1D8E" FontSize="20"/>
 
         <Label Content="Position" HorizontalAlignment="Left" Margin="1083,997,0,0" VerticalAlignment="Top" Foreground="#FF5D1D8E" FontFamily="Gill Sans MT" FontSize="20" Height="31"/>
-        <ListBox d:ItemsSource="{d:SampleData ItemCount=4}" Width="296" Height="33" Background="#FFF7F1FF" Foreground="#FF5D1D8E" BorderBrush="#FF5D1D8E" SelectionChanged="ListBox_SelectionChanged" FontSize="20" FontFamily="Gill Sans MT" Margin="1084,1029,170,798" FontStyle="Italic" BorderThickness="2,2,2,2">
+        <ListBox x:Name="Position" d:ItemsSource="{d:SampleData ItemCount=4}" Width="296" Height="33" Background="#FFF7F1FF" Foreground="#FF5D1D8E" BorderBrush="#FF5D1D8E" SelectionChanged="ListBox_SelectionChanged" FontSize="20" FontFamily="Gill Sans MT" Margin="1084,1029,170,798" FontStyle="Italic" BorderThickness="2,2,2,2" Padding="7,0.4,10,0">
             <ListBox.Resources>
                 <Style TargetType="{x:Type Border}">
                     <Setter Property="CornerRadius" Value="18" />
@@ -189,7 +189,7 @@
 
         <Label Content="" HorizontalAlignment="Left" Margin="1086,1307,0,0" VerticalAlignment="Top" Foreground="#FF5D1D8E" FontFamily="Gill Sans MT" FontSize="20" Height="31"/>
 
-        <TextBox HorizontalAlignment="Left" Margin="90,1131,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="296" BorderThickness="2,2,2,2" BorderBrush="#FF5D1D8E" Height="33" FontSize="20" Background="#FFF7F1FF">
+        <TextBox x:Name="Education" HorizontalAlignment="Left" Margin="90,1131,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="296" BorderThickness="2,2,2,2" BorderBrush="#FF5D1D8E" Height="40" FontSize="20" Background="#FFF7F1FF" AcceptsReturn="True" Padding="10,3,10,0">
             <TextBox.Resources>
                 <Style TargetType="{x:Type Border}">
                     <Setter Property="CornerRadius" Value="20"/>
@@ -199,7 +199,7 @@
         <Label Content="Education" HorizontalAlignment="Left" Margin="90,1097,0,0" VerticalAlignment="Top" Foreground="#FF5D1D8E" FontFamily="Gill Sans MT" FontSize="20" Height="29"/>
         <Label Content="*" HorizontalAlignment="Left" Margin="392,1132,0,0" VerticalAlignment="Top" Foreground="#FF5D1D8E" FontSize="20"/>
 
-        <TextBox HorizontalAlignment="Left" Margin="90,1237,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="296" BorderThickness="2,2,2,2" BorderBrush="#FF5D1D8E" Height="33" FontSize="20" Background="#FFF7F1FF">
+        <TextBox x:Name="PreWorkPlace" HorizontalAlignment="Left" Margin="90,1237,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="296" BorderThickness="2,2,2,2" BorderBrush="#FF5D1D8E" Height="40" FontSize="20" Background="#FFF7F1FF" Padding="10,3,10,0">
             <TextBox.Resources>
                 <Style TargetType="{x:Type Border}">
                     <Setter Property="CornerRadius" Value="20"/>
@@ -209,7 +209,7 @@
         <Label Content="Previous Work Place" HorizontalAlignment="Left" Margin="90,1201,0,0" VerticalAlignment="Top" Foreground="#FF5D1D8E" FontFamily="Gill Sans MT" FontSize="20" Height="31"/>
         <Label Content="*" HorizontalAlignment="Left" Margin="392,1238,0,0" VerticalAlignment="Top" Foreground="#FF5D1D8E" FontSize="20"/>
 
-        <TextBox HorizontalAlignment="Left" Margin="1085,1131,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="296" BorderThickness="2,2,2,2" BorderBrush="#FF5D1D8E" Height="33" FontSize="20" Background="#FFF7F1FF">
+        <TextBox x:Name="WorkExpe" HorizontalAlignment="Left" Margin="1085,1131,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="296" BorderThickness="2,2,2,2" BorderBrush="#FF5D1D8E" Height="40" FontSize="20" Background="#FFF7F1FF" AcceptsReturn="True" Padding="10,3,10,0">
             <TextBox.Resources>
                 <Style TargetType="{x:Type Border}">
                     <Setter Property="CornerRadius" Value="20"/>
@@ -218,7 +218,7 @@
         </TextBox>
         <Label Content="Work Experience" HorizontalAlignment="Left" Margin="1084,1098,0,0" VerticalAlignment="Top" Foreground="#FF5D1D8E" FontFamily="Gill Sans MT" FontSize="20" Height="29"/>
 
-        <TextBox HorizontalAlignment="Left" Margin="1085,1237,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="296" BorderThickness="2,2,2,2" BorderBrush="#FF5D1D8E" Height="33" FontSize="20" Background="#FFF7F1FF">
+        <TextBox x:Name="PreWorkTelNum" HorizontalAlignment="Left" Margin="1085,1237,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="296" BorderThickness="2,2,2,2" BorderBrush="#FF5D1D8E" Height="40" FontSize="20" Background="#FFF7F1FF" Padding="10,3,10,0">
             <TextBox.Resources>
                 <Style TargetType="{x:Type Border}">
                     <Setter Property="CornerRadius" Value="20"/>
@@ -227,7 +227,7 @@
         </TextBox>
         <Label Content="Previous Work Tel Number" HorizontalAlignment="Left" Margin="1084,1201,0,0" VerticalAlignment="Top" Foreground="#FF5D1D8E" FontFamily="Gill Sans MT" FontSize="20" Height="31"/>
 
-        <TextBox HorizontalAlignment="Left" Margin="90,1343,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="296" BorderThickness="2,2,2,2" BorderBrush="#FF5D1D8E" Height="33" FontSize="20" Background="#FFF7F1FF">
+        <TextBox x:Name="PreWorkAddress" HorizontalAlignment="Left" Margin="90,1343,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="296" BorderThickness="2,2,2,2" BorderBrush="#FF5D1D8E" Height="40" FontSize="20" Background="#FFF7F1FF" AcceptsReturn="True" Padding="10,3,10,0">
             <TextBox.Resources>
                 <Style TargetType="{x:Type Border}">
                     <Setter Property="CornerRadius" Value="20"/>
@@ -236,21 +236,21 @@
         </TextBox>
         <Label Content="Previous Work Address" HorizontalAlignment="Left" Margin="90,1307,0,0" VerticalAlignment="Top" Foreground="#FF5D1D8E" FontFamily="Gill Sans MT" FontSize="20" Height="31"/>
         <ScrollBar Orientation="Vertical" Width="1" Height="1690" Margin="1500,124,20,10" Background="#FF5D1D8E" Minimum="1" Maximum="1380"></ScrollBar>
-        <Button Content="Confirm" HorizontalAlignment="Left" Height="73" Margin="481,1506,0,0" VerticalAlignment="Top" Width="486" Background="#FF5D1D8E" Foreground="White" FontSize="38" FontWeight="Bold" FontFamily="Franklin Gothic Medium">
+        <Button x:Name="Confirm" Content="Confirm" HorizontalAlignment="Center" Height="73" Margin="0,1504,0,0" VerticalAlignment="Top" Width="450" Background="#FF5D1D8E" Foreground="White" FontSize="38" FontWeight="Bold" FontFamily="Franklin Gothic Medium">
             <Button.Resources>
                 <Style TargetType="{x:Type Border}">
                     <Setter Property="CornerRadius" Value="30"/>
                 </Style>
             </Button.Resources>
         </Button>
-        <Button Content="Clear" HorizontalAlignment="Left" Height="73" Margin="481,1608,0,0" VerticalAlignment="Top" Width="486" Background="#FFF7F1FF" Foreground="#FF5D1D8E" FontSize="38" FontWeight="Bold" FontFamily="Franklin Gothic Medium" BorderThickness="4,4,4,4" BorderBrush="#FF5D1D8E">
+        <Button Content="Clear" HorizontalAlignment="Center" Height="73" Margin="0,1605,0,0" VerticalAlignment="Top" Width="450" Background="#FFF7F1FF" Foreground="#FF5D1D8E" FontSize="38" FontWeight="Bold" FontFamily="Franklin Gothic Medium" BorderThickness="4,4,4,4" BorderBrush="#FF5D1D8E" HorizontalContentAlignment="Center">
             <Button.Resources>
                 <Style TargetType="{x:Type Border}">
                     <Setter Property="CornerRadius" Value="30"/>
                 </Style>
             </Button.Resources>
         </Button>
-        <Button Content="Cancel" HorizontalAlignment="Left" Height="73" Margin="481,1710,0,0" VerticalAlignment="Top" Width="486" Background="#FFF7F1FF" Foreground="#FF5D1D8E" FontSize="38" FontWeight="Bold" FontFamily="Franklin Gothic Medium" BorderThickness="4,4,4,4" BorderBrush="#FF5D1D8E">
+        <Button Content="Cancel" HorizontalAlignment="Center" Height="73" Margin="0,1707,0,0" VerticalAlignment="Top" Width="450" Background="#FFF7F1FF" Foreground="#FF5D1D8E" FontSize="38" FontWeight="Bold" FontFamily="Franklin Gothic Medium" BorderThickness="4,4,4,4" BorderBrush="#FF5D1D8E">
             <Button.Resources>
                 <Style TargetType="{x:Type Border}">
                     <Setter Property="CornerRadius" Value="30"/>
