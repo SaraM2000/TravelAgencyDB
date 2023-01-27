@@ -149,7 +149,7 @@ namespace dbproject
             } */
         }
         
-        private void Delete_Btn_MouseEnter(object sender, MouseEventArgs e)
+       /* private void Delete_Btn_MouseEnter(object sender, MouseEventArgs e)
         {
             var converter = new System.Windows.Media.BrushConverter();
             var brush = (Brush) converter.ConvertFromString("#FFF7F1FF");
@@ -161,6 +161,12 @@ namespace dbproject
             var converter = new System.Windows.Media.BrushConverter();
             var brush = (Brush)converter.ConvertFromString("#FFF7F1FF");
             Delete_Btn.Background = brush;
+        }
+       */
+
+        private void Delete_Btn_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }
