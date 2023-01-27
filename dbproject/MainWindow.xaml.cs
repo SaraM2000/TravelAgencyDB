@@ -24,23 +24,25 @@ namespace dbproject
     /// Interaction logic for MainWindow.xaml
     /// </summary>
 
-    
-    
-   
+
+
+
     public partial class MainWindow : Window
     {
 
-       
-       
+
+
+
 
 
 
         public MainWindow()
         {
             InitializeComponent();
-   
+            BindListBox();
+            BindListBox1();
         }
-        
+
 
         private void ConfirmBtn(object sender, RoutedEventArgs e)
         {
@@ -60,7 +62,7 @@ namespace dbproject
             com.Parameters.AddWithValue("@employeeFatherName", FathersName.Text);
             com.Parameters.AddWithValue("@employeeFamNum", FamilyNumber.Text);
             com.Parameters.AddWithValue("@employeeStartDate", StartDate.Text);/////// date
-            com.Parameters.AddWithValue("@employeeMaritalStatus", MartialStatus.Text);/// list
+            com.Parameters.AddWithValue("@employeeMaritalStatus", MartialStatus.SelectedItem);/// list
             com.Parameters.AddWithValue("@employeeChildNum", ChildNumber.Text);
             com.Parameters.AddWithValue("@employeeEndDate", EndDate.Text); /////////// date
             com.Parameters.AddWithValue("@Employee_Education", Education.Text);
@@ -69,10 +71,10 @@ namespace dbproject
             com.Parameters.AddWithValue("@employeePreWorkAddress", PreWorkAddress.Text);
             com.Parameters.AddWithValue("@employeePreWorkTelNum", PreWorkTelNum.Text);
             com.Parameters.AddWithValue("@employeeSabbaticalDays", Sebbaticaldays.Text);
-            com.Parameters.AddWithValue("@Employee_Position", Position.Items);/////// list
-           
+            com.Parameters.AddWithValue("@Employee_Position", Position.SelectedItem);/////// list
+
             com.ExecuteNonQuery();
-            
+
         }
         private void Button_Click(object sender, RoutedEventArgs e)
         {
@@ -84,7 +86,20 @@ namespace dbproject
 
         }
 
-        
+        private readonly String[] positions = { "Select...", "Manager", "Accountant", "Flight Agent", "Tourism Agent" };
+        private void BindListBox()
+        {
+            Position.ItemsSource = positions;
+
+        }
+        private readonly String[] MStatus = { "Select...", "Single", "Married" };
+        private void BindListBox1()
+        {
+            MartialStatus.ItemsSource = MStatus;
+
+        }
+
+
 
 
 
