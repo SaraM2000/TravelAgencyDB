@@ -29,18 +29,13 @@ namespace dbproject
    
     public partial class MainWindow : Window
     {
-
-       
-       
-
-
-
         public MainWindow()
         {
             InitializeComponent();
    
         }
-        
+       
+
 
         private void ConfirmBtn(object sender, RoutedEventArgs e)
         {
