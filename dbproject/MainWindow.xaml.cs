@@ -52,7 +52,7 @@ namespace dbproject
             if (FirstName.Text == null || LastName.Text == null || NationalCode.Text == null || BirthDate.Text == null || PhoneNumber.Text == null || ChildNumber.Text == null || StartDate.Text == null || EndDate.Text == null || FamilyNumber.Text == null || BAInfo.Text == null || Address.Text == null ||
                 Sebbaticaldays.Text == null || (Position.SelectedItem.ToString() == "Select...") || agencyBranchCode.Text == null || Education.Text == null)
             {
-               MessageBox.Show("Please fill the stared fields", "Empty Fields", MessageBoxButton.OK , MessageBoxImage.Error);
+               MessageBox.Show("Please fill the stared fields", "", MessageBoxButton.OK , MessageBoxImage.Error);
                
             }
 
@@ -87,6 +87,8 @@ namespace dbproject
                 com.Parameters.AddWithValue("@Employee_Position", Position.SelectedItem);/////// list
 
                 com.ExecuteNonQuery();
+
+                MessageBox.Show("Successfully Added", "", MessageBoxButton.OK, MessageBoxImage.Information);
 
             }
 
