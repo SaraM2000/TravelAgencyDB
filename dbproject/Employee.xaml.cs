@@ -64,12 +64,6 @@ namespace dbproject
             com.ExecuteNonQuery();
 
         }
-        private void Confirm_button(object sender, RoutedEventArgs e)
-        {
-            Window1 ob = new Window1();
-            this.Visibility = Visibility.Hidden;
-            ob.Show();
-        }
 
         private void ListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
