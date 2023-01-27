@@ -7,80 +7,77 @@
         mc:Ignorable="d"
         Title="Window3" Height="1863" Width="1730" Background="#FF7D7D7D">
 
+    <ScrollViewer Margin="0,0,0,0">
+        <Grid Background="#FFF7F1FF" Margin="0,0,0,0" Height="1863" Width="1730">
 
 
-    <Grid Background="#FFF7F1FF" Margin="0,0,0,-6">
-        <ScrollBar Orientation="Vertical" Width="1" Margin="1692,100,21,0" Background="#FF5D1D8E" Minimum="1" Maximum="1380" Height="1577"/>
+            <Rectangle Height="116" Stroke="Black" Fill="#FF5D1D8E" VerticalAlignment="Top"/>
+            <TextBox Height="64" TextWrapping="Wrap" Name="NC" Text="National Code"  FontWeight="Medium" TextAlignment="Left" VerticalAlignment="Top" Background="#FFE9E9E9" UseLayoutRounding="True" BorderThickness="1,1,1,1" SelectionTextBrush="#FFC62C2C" SelectionBrush="#FF5D1D8E" Margin="546,520,549,0" Padding="60,10,0,0" FontSize="28" Foreground="#FFACACAC" HorizontalContentAlignment="Center" FontFamily="Bahnschrift SemiBold">
+                <TextBox.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="CornerRadius" Value="30"/>
+                    </Style>
+                </TextBox.Resources>
+            </TextBox>
+
+            <TextBox Height="64" TextWrapping="Wrap"  FontWeight="Medium" Name="FN" Text="First Name" TextAlignment="Left" VerticalAlignment="Top" Background="#FFE9E9E9" UseLayoutRounding="True" BorderThickness="1,1,1,1" SelectionTextBrush="#FFC62C2C" SelectionBrush="#FF5D1D8E" Margin="546,215,548,0" Padding="60,10,0,0" FontSize="28" Foreground="#FFACACAC" HorizontalContentAlignment="Center" FontFamily="Bahnschrift SemiBold">
+                <TextBox.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="CornerRadius" Value="30"/>
+                    </Style>
+
+                </TextBox.Resources>
+
+            </TextBox>
+            <TextBox Height="64" TextWrapping="Wrap" FontWeight="Medium" Name="LN" Text="Last Name" TextAlignment="Left" VerticalAlignment="Top" Background="#FFE9E9E9" UseLayoutRounding="True" BorderThickness="1,1,1,1" SelectionTextBrush="#FFC62C2C" SelectionBrush="#FF5D1D8E" Margin="546,369,549,0" Padding="60,10,0,0" FontSize="28" Foreground="#FFACACAC" HorizontalContentAlignment="Center" FontFamily="Bahnschrift SemiBold">
+
+                <TextBox.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="CornerRadius" Value="30"/>
+                    </Style>
+                </TextBox.Resources>
+            </TextBox>
+            <Label Content="Hint : " HorizontalAlignment="Left" FontWeight="Medium" Height="44" Margin="561,280,0,0" VerticalAlignment="Top" Width="120" Foreground="#FF5D1D8E" FontSize="24" FontFamily="Bahnschrift SemiBold"/>
+            <Label Content="Hint : " HorizontalAlignment="Left" FontWeight="Medium" Height="44" Margin="561,434,0,0" VerticalAlignment="Top" Width="118" Foreground="#FF5D1D8E" FontSize="24" FontFamily="Bahnschrift SemiBold"/>
+            <Label Content="Hint : " HorizontalAlignment="Left" FontWeight="Medium" Height="44" Margin="561,585,0,0" VerticalAlignment="Top" Width="120" Foreground="#FF5D1D8E" FontSize="24" FontFamily="Bahnschrift SemiBold"/>
+            <Label Content="Enter Employee's First Name" HorizontalAlignment="Left" FontWeight="Medium" Height="44" Margin="631,280,0,0" VerticalAlignment="Top" Width="383" Foreground="#FFBEA3D6" FontSize="24" FontFamily="Bahnschrift Light"/>
+            <Label Content="Enter Employee's Last Name" HorizontalAlignment="Left" FontWeight="Medium" Height="44" Margin="631,434,0,0" VerticalAlignment="Top" Width="383" Foreground="#FFBEA3D6" FontSize="24" FontFamily="Bahnschrift Light"/>
+            <Label Content="Enter Employee's National Code" HorizontalAlignment="Left" FontWeight="Medium" Height="44" Margin="631,590,0,0" VerticalAlignment="Top" Width="383" Foreground="#FFBEA3D6" FontFamily="Bahnschrift Light" FontSize="24"/>
+            <Button Content="Search" Height="65" FontWeight="SemiBold" Margin="720,690,720,0" VerticalAlignment="Top" Background="#5D1D8E" Foreground="#FFFFFF" HorizontalContentAlignment="Center" BorderThickness="1,1,1,1" FontSize="30" FontFamily="Candara">
+                <Button.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="CornerRadius" Value="21"/>
+                    </Style>
+                </Button.Resources>
+            </Button>
+            <Label Content="Search Employees" FontWeight="SemiBold" Margin="558,10,558,0" VerticalAlignment="Top" Height="88" FontSize="58" Foreground="#FFF7F1FF" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Candara"/>
+
+            <DataGrid Name="table" d:ItemsSource="{Binding Path = ListOfemployees}" Width="1000" Margin="365,859,365,497" GridLinesVisibility="All" FontFamily="Bahnschrift Light">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="First Name"/>
+                    <DataGridTextColumn Header="Last Name"/>
+                    <DataGridTextColumn Header="National Code"/>
+                    <DataGridTextColumn/>
+
+                </DataGrid.Columns>
 
 
-        <Rectangle Height="116" Stroke="Black" Fill="#FF5D1D8E" VerticalAlignment="Top"/>
-        <TextBox Height="64" TextWrapping="Wrap" Name="NC" Text="National Code"  FontWeight="Medium" TextAlignment="Left" VerticalAlignment="Top" Background="#FFE9E9E9" UseLayoutRounding="True" BorderThickness="1,1,1,1" SelectionTextBrush="#FFC62C2C" SelectionBrush="#FF5D1D8E" Margin="558,520,537,0" Padding="60,10,0,0" FontSize="28" Foreground="#FFACACAC" HorizontalContentAlignment="Center">
-            <TextBox.Resources>
-                <Style TargetType="{x:Type Border}">
-                    <Setter Property="CornerRadius" Value="30"/>
-                </Style>
-            </TextBox.Resources>
-        </TextBox>
+            </DataGrid>
+            <Button x:Name="Update_Btn" Content="Update" HorizontalAlignment="Center" Height="73" Margin="0,1627,0,0" VerticalAlignment="Top" Width="430" Foreground="White" FontSize="38" FontWeight="Bold" FontFamily="Candara" Background="#FF5D1D8E" MouseEnter="Update_Btn_MouseEnter">
+                <Button.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="CornerRadius" Value="30"/>
+                    </Style>
+                </Button.Resources>
+            </Button>
+            <Button x:Name="Delete_Btn" Content="Delete" HorizontalAlignment="Left" Height="73" Margin="650,1511,0,0" VerticalAlignment="Top" Width="430" Background="#FF5D1D8E" Foreground="White" FontSize="38" FontWeight="Bold" FontFamily="Candara" MouseEnter="Delete_Btn_MouseEnter">
+                <Button.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="CornerRadius" Value="30"/>
+                    </Style>
+                </Button.Resources>
+            </Button>
+        </Grid>
 
-        <TextBox Height="64" TextWrapping="Wrap"  FontWeight="Medium" Name="FN" Text="First Name" TextAlignment="Left" VerticalAlignment="Top" Background="#FFE9E9E9" UseLayoutRounding="True" BorderThickness="1,1,1,1" SelectionTextBrush="#FFC62C2C" SelectionBrush="#FF5D1D8E" Margin="558,215,536,0" Padding="60,10,0,0" FontSize="28" Foreground="#FFACACAC" HorizontalContentAlignment="Center">
-            <TextBox.Resources>
-                <Style TargetType="{x:Type Border}">
-                    <Setter Property="CornerRadius" Value="30"/>
-                </Style>
-
-            </TextBox.Resources>
-
-        </TextBox>
-        <TextBox Height="64" TextWrapping="Wrap" FontWeight="Medium" Name="LN" Text="Last Name" TextAlignment="Left" VerticalAlignment="Top" Background="#FFE9E9E9" UseLayoutRounding="True" BorderThickness="1,1,1,1" SelectionTextBrush="#FFC62C2C" SelectionBrush="#FF5D1D8E" Margin="558,369,537,0" Padding="60,10,0,0" FontSize="28" Foreground="#FFACACAC" HorizontalContentAlignment="Center">
-
-            <TextBox.Resources>
-                <Style TargetType="{x:Type Border}">
-                    <Setter Property="CornerRadius" Value="30"/>
-                </Style>
-            </TextBox.Resources>
-        </TextBox>
-        <Label Content="Hint : " HorizontalAlignment="Left" FontWeight="Medium" Height="44" Margin="561,280,0,0" VerticalAlignment="Top" Width="120" Foreground="#FF5D1D8E" FontSize="24"/>
-        <Label Content="Hint : " HorizontalAlignment="Left" FontWeight="Medium" Height="44" Margin="561,434,0,0" VerticalAlignment="Top" Width="118" Foreground="#FF5D1D8E" FontSize="24"/>
-        <Label Content="Hint : " HorizontalAlignment="Left" FontWeight="Medium" Height="44" Margin="561,585,0,0" VerticalAlignment="Top" Width="120" Foreground="#FF5D1D8E" FontSize="24"/>
-        <Label Content="Enter Employee's First Name" HorizontalAlignment="Left" FontWeight="Medium" Height="44" Margin="631,280,0,0" VerticalAlignment="Top" Width="383" Foreground="#FFBEA3D6" FontSize="24"/>
-        <Label Content="Enter Employee's Last Name" HorizontalAlignment="Left" FontWeight="Medium" Height="44" Margin="631,434,0,0" VerticalAlignment="Top" Width="383" Foreground="#FFBEA3D6" FontSize="24"/>
-        <Label Content="Enter Employee's National Code" HorizontalAlignment="Left" FontWeight="Medium" Height="44" Margin="631,590,0,0" VerticalAlignment="Top" Width="383" Foreground="#FFBEA3D6" FontFamily="Gill Sans MT" FontSize="24"/>
-        <Button Content="Search" HorizontalAlignment="Center" Height="65" FontWeight="SemiBold" Margin="0,690,0,0" VerticalAlignment="Top" Width="290" Background="#5D1D8E" Foreground="#FFFFFF" HorizontalContentAlignment="Center" BorderThickness="1,1,1,1" FontSize="30">
-            <Button.Resources>
-                <Style TargetType="{x:Type Border}">
-                    <Setter Property="CornerRadius" Value="21"/>
-                </Style>
-            </Button.Resources>
-        </Button>
-        <Label Content="Search Employees" FontWeight="SemiBold" Margin="540,10,576,0" VerticalAlignment="Top" Height="88" FontSize="58" Foreground="#FFF7F1FF" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
-
-        <DataGrid Name="table" d:ItemsSource="{Binding Path = ListOfemployees}" Width="1000" Margin="365,859,365,497" GridLinesVisibility="All">
-            <DataGrid.Columns>
-                <DataGridTextColumn Header="First Name"/>
-                <DataGridTextColumn Header="Last Name"/>
-                <DataGridTextColumn Header="National Code"/>
-                <DataGridTextColumn/>
-
-            </DataGrid.Columns>
-
-
-        </DataGrid>
-        <Button x:Name="Update_Btn" Content="Update" HorizontalAlignment="Center" Height="73" Margin="0,1627,0,0" VerticalAlignment="Top" Width="430" Foreground="White" FontSize="38" FontWeight="Bold" FontFamily="Franklin Gothic Medium" Background="#FF5D1D8E" MouseEnter="Update_Btn_MouseEnter">
-            <Button.Resources>
-                <Style TargetType="{x:Type Border}">
-                    <Setter Property="CornerRadius" Value="30"/>
-                </Style>
-            </Button.Resources>
-        </Button>
-        <Button x:Name="Delete_Btn" Content="Delete" HorizontalAlignment="Center" Height="73" Margin="0,1511,0,0" VerticalAlignment="Top" Width="430" Background="#FF5D1D8E" Foreground="White" FontSize="38" FontWeight="Bold" FontFamily="Franklin Gothic Medium" MouseEnter="Delete_Btn_MouseEnter">
-            <Button.Resources>
-                <Style TargetType="{x:Type Border}">
-                    <Setter Property="CornerRadius" Value="30"/>
-                </Style>
-            </Button.Resources>
-        </Button>
-    </Grid>
-
-
-
+    </ScrollViewer>
 </Window>

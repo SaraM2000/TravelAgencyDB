@@ -23,5 +23,11 @@ namespace dbproject
         {
             InitializeComponent();
         }
+        private void Login_button(object sender, RoutedEventArgs e)
+        {
+            Window3 Search_employees = new Window3();
+            this.Visibility = Visibility.Hidden;
+            Search_employees.Show();
+        }
     }
 }
