@@ -62,14 +62,14 @@
 
 
             </DataGrid>
-            <Button x:Name="Update_Btn" Content="Update" HorizontalAlignment="Center" Height="73" Margin="0,1627,0,0" VerticalAlignment="Top" Width="430" Foreground="White" FontSize="38" FontWeight="Bold" FontFamily="Franklin Gothic Medium" Background="#FF5D1D8E" MouseEnter="Update_Btn_MouseEnter">
+            <Button x:Name="Update_Btn" Content="Update" HorizontalAlignment="Center" Height="73" Margin="0,1627,0,0" VerticalAlignment="Top" Width="430" Foreground="White" FontSize="38" FontWeight="Bold" FontFamily="Franklin Gothic Medium" Background="#FF5D1D8E">
                 <Button.Resources>
                     <Style TargetType="{x:Type Border}">
                         <Setter Property="CornerRadius" Value="30"/>
                     </Style>
                 </Button.Resources>
             </Button>
-            <Button x:Name="Delete_Btn" Content="Delete" HorizontalAlignment="Center" Height="73" Margin="0,1511,0,0" VerticalAlignment="Top" Width="430" Background="#FF5D1D8E" Foreground="White" FontSize="38" FontWeight="Bold" FontFamily="Franklin Gothic Medium" MouseEnter="Delete_Btn_MouseEnter" Click="Delete_Btn_Click">
+            <Button x:Name="Delete_Btn" Content="Delete" HorizontalAlignment="Center" Height="73" Margin="0,1511,0,0" VerticalAlignment="Top" Width="430" Background="#FF5D1D8E" Foreground="White" FontSize="38" FontWeight="Bold" FontFamily="Franklin Gothic Medium" Click="Delete_Btn_Click">
                 <Button.Resources>
                     <Style TargetType="{x:Type Border}">
                         <Setter Property="CornerRadius" Value="30"/>

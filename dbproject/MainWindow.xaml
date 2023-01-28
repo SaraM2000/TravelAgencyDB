@@ -221,7 +221,7 @@
                 </TextBox.Resources>
             </TextBox>
             <Label Content="Previous Work Address" HorizontalAlignment="Left" Margin="90,1307,0,0" VerticalAlignment="Top" Foreground="#FF5D1D8E" FontFamily="Gill Sans MT" FontSize="20"/>
-            <Button x:Name="Confirm" Content="Confirm" HorizontalAlignment="Center" Height="73" Margin="0,1504,0,0" VerticalAlignment="Top" Width="450" Background="#FF5D1D8E" Foreground="White" FontSize="38" FontWeight="Bold" FontFamily="Franklin Gothic Medium">
+            <Button x:Name="Confirm" Content="Confirm" HorizontalAlignment="Center" Height="73" Margin="0,1504,0,0" VerticalAlignment="Top" Width="450" Background="#FF5D1D8E" Foreground="White" FontSize="38" FontWeight="Bold" FontFamily="Franklin Gothic Medium" Click="ConfirmBtn">
                 <Button.Resources>
                     <Style TargetType="{x:Type Border}">
                         <Setter Property="CornerRadius" Value="30"/>
