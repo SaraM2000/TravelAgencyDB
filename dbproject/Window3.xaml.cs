@@ -69,9 +69,24 @@ namespace dbproject
         public Window3()
         {
             InitializeComponent();
+            binddatagrid();
         }
 
-           private void Window3_Load (object sender, EventArgs e)
+        private void binddatagrid()
+        {
+            SqlConnection con = new SqlConnection();
+            con.ConnectionString = ConfigurationManager.ConnectionStrings["condb"].ConnectionString;
+            con.Open();
+            SqlCommand cmd = new SqlCommand();
+            cmd.CommandText = "select * from [EMPLOYEE]";
+            cmd.Connection = con;
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable("Employees");
+            da.Fill(dt);
+            EmployeeTable.ItemsSource = dt.DefaultView;
+        }
+
+        /*private void Window3_Load (object sender, EventArgs e)
         {
             gridbind();
         }
@@ -96,100 +111,105 @@ namespace dbproject
 
         }
 
-
-         /*   var ListOfemployees = new List<Employee>();
-            {
-
-                new Employee() { FirstName = "sara", LastName = "movahhed" };
-
-
-            }
-
-
-
-            
-             private void FNfocus (object sender, RoutedEventArgs e)
-             {
-
-                FN.Text = "";
-
-
-
-             }
-            private void LNfocus(object sender, RoutedEventArgs e)
-            {
-
-
-                LN.Text = "";
-
-
-
-            }
-
-            private void NCfocus(object sender, RoutedEventArgs e)
-            {
-
-
-                NC.Text = "";
-
-
-            }
-
-
-
-
-
-
-
-
-
-
-            private void ScrollBar_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
-            {
-
-            }
-
-            private void Border_Drop(object sender, DragEventArgs e)
-            {
-
-            }
-
-            private void DataGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
-            {
-
-
-            }
-
-            private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
-            {
-
-            }
-
-            private void Button_Click(object sender, RoutedEventArgs e)
-            {
-
-            } 
-        }
-        
-        private void Delete_Btn_MouseEnter(object sender, MouseEventArgs e)
-        {
-            var converter = new System.Windows.Media.BrushConverter();
-            var brush = (Brush) converter.ConvertFromString("#FFF7F1FF");
-            Delete_Btn.Background = brush;
-        }
-
-        private void Update_Btn_MouseEnter(object sender, MouseEventArgs e)
-        {
-            var converter = new System.Windows.Media.BrushConverter();
-            var brush = (Brush)converter.ConvertFromString("#FFF7F1FF");
-            Delete_Btn.Background = brush;
-        }
-       
-
-        private void Delete_Btn_Click(object sender, RoutedEventArgs e)
+        private void Button_Click(object sender, RoutedEventArgs e)
         {
 
-        }
-    */
+        }*/
+
+
+        /*   var ListOfemployees = new List<Employee>();
+           {
+
+               new Employee() { FirstName = "sara", LastName = "movahhed" };
+
+
+           }
+
+
+
+
+            private void FNfocus (object sender, RoutedEventArgs e)
+            {
+
+               FN.Text = "";
+
+
+
+            }
+           private void LNfocus(object sender, RoutedEventArgs e)
+           {
+
+
+               LN.Text = "";
+
+
+
+           }
+
+           private void NCfocus(object sender, RoutedEventArgs e)
+           {
+
+
+               NC.Text = "";
+
+
+           }
+
+
+
+
+
+
+
+
+
+
+           private void ScrollBar_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
+           {
+
+           }
+
+           private void Border_Drop(object sender, DragEventArgs e)
+           {
+
+           }
+
+           private void DataGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
+           {
+
+
+           }
+
+           private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
+           {
+
+           }
+
+           private void Button_Click(object sender, RoutedEventArgs e)
+           {
+
+           } 
+       }
+
+       private void Delete_Btn_MouseEnter(object sender, MouseEventArgs e)
+       {
+           var converter = new System.Windows.Media.BrushConverter();
+           var brush = (Brush) converter.ConvertFromString("#FFF7F1FF");
+           Delete_Btn.Background = brush;
+       }
+
+       private void Update_Btn_MouseEnter(object sender, MouseEventArgs e)
+       {
+           var converter = new System.Windows.Media.BrushConverter();
+           var brush = (Brush)converter.ConvertFromString("#FFF7F1FF");
+           Delete_Btn.Background = brush;
+       }
+
+
+       private void Delete_Btn_Click(object sender, RoutedEventArgs e)
+       {
+
+       }
+   */
     }
 }

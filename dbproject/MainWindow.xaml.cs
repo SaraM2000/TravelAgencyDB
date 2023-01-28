@@ -48,7 +48,7 @@ namespace dbproject
         }
         private void Login_Btn(object sender, RoutedEventArgs e)
         {
-            Window3 Search_employees = new Window3();
+            Window1 Search_employees = new Window1();
             this.Visibility = Visibility.Hidden;
             Search_employees.Show();
         }
