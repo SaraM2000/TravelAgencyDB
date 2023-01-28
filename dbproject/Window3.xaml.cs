@@ -87,12 +87,13 @@ namespace dbproject
                 SqlDataReader reader = cmd.ExecuteReader();
                 DataTable dt= new DataTable();
                 dt.Load(reader);
-                EmployeeTable.DataContext = dt;
-                conn.Close();
-                dt.Rows[0]
-
-                
             
+                
+
+                 
+                 conn.Close();
+
+
         }
 
 
