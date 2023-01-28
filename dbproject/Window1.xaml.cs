@@ -29,5 +29,6 @@ namespace dbproject
             this.Visibility = Visibility.Hidden;
             Search_employees.Show();
         }
+
     }
 }

@@ -24,7 +24,7 @@
                 </TextBox.Resources>
             </TextBox>
             <Label Content="First Name" HorizontalAlignment="Left" Margin="90,152,0,0" VerticalAlignment="Top" Foreground="#FF5D1D8E" FontFamily="Bahnschrift Light" FontSize="20" Height="33" Width="117"/>
-            <Label Content="*" HorizontalAlignment="Left" Margin="392,188,0,0" VerticalAlignment="Top" Foreground="#FF5D1D8E" FontSize="20" Height="37" Width="18"/>
+            <Label Content="*" HorizontalAlignment="Left" Margin="392,188,0,0" VerticalAlignment="Top" Foreground="#FF5D1D8E" FontSize="20"/>
 
             <TextBox x:Name="NationalCode" HorizontalAlignment="Left" Margin="90,291,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="296" BorderThickness="2,2,2,2" BorderBrush="#FF5D1D8E" Height="40" FontSize="20" Background="#FFF7F1FF" Padding="10,3,10,0">
                 <TextBox.Resources>
@@ -33,10 +33,10 @@
                     </Style>
                 </TextBox.Resources>
             </TextBox>
-            <Label Content="National Code&#xD;&#xA;" HorizontalAlignment="Left" Margin="90,258,0,0" VerticalAlignment="Top" Foreground="#FF5D1D8E" FontFamily="Bahnschrift Light" FontSize="20" Height="56" Width="146"/>
-            <Label Content="*" HorizontalAlignment="Left" Margin="392,293,0,0" VerticalAlignment="Top" Foreground="#FF5D1D8E" FontSize="20" Height="37" Width="18"/>
+            <Label Content="National Code&#xD;&#xA;" HorizontalAlignment="Left" Margin="90,258,0,0" VerticalAlignment="Top" Foreground="#FF5D1D8E" FontFamily="Bahnschrift Light" FontSize="20"/>
+            <Label Content="*" HorizontalAlignment="Left" Margin="392,293,0,0" VerticalAlignment="Top" Foreground="#FF5D1D8E" FontSize="20"/>
 
-            <Label Content="Birth Date&#xD;&#xA;" HorizontalAlignment="Left" Margin="90,364,0,0" VerticalAlignment="Top" Foreground="#FF5D1D8E" FontFamily="Bahnschrift Light" FontSize="20" Width="110"/>
+            <Label Content="Birth Date&#xD;&#xA;" HorizontalAlignment="Left" Margin="90,364,0,0" VerticalAlignment="Top" Foreground="#FF5D1D8E" FontFamily="Bahnschrift Light" FontSize="20"/>
             <DatePicker x:Name="StartDate" IsTodayHighlighted="True" HorizontalAlignment="Left" Margin="93,715,0,0" VerticalAlignment="Top" Width="296" Height="40" Foreground="#FF5D1D8E" Background="#FFF7F1FF" FontSize="20" FontFamily="Gill Sans MT" FontStyle="Italic" BorderThickness="2,2,2,2" BorderBrush="#FF5D1D8E" Padding="4,5,2,0">
                 <DatePicker.Resources>
                     <Style TargetType="{x:Type Border}">
@@ -53,10 +53,10 @@
                     </Style>
                 </TextBox.Resources>
             </TextBox>
-            <Label Content="Tel Number&#xD;&#xA;&#xA;" HorizontalAlignment="Left" Margin="90,470,0,0" VerticalAlignment="Top" Foreground="#FF5D1D8E" FontFamily="Bahnschrift Light" FontSize="20" Height="80" Width="121"/>
+            <Label Content="Tel Number&#xD;&#xA;&#xA;" HorizontalAlignment="Left" Margin="90,470,0,0" VerticalAlignment="Top" Foreground="#FF5D1D8E" FontFamily="Bahnschrift Light" FontSize="20"/>
 
 
-            <Label Content="Marital Status&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xA;" HorizontalAlignment="Left" Margin="90,575,0,0" VerticalAlignment="Top" Foreground="#FF5D1D8E" FontFamily="Bahnschrift Light" FontSize="20" Width="147"/>
+            <Label Content="Marital Status&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xA;" HorizontalAlignment="Left" Margin="90,575,0,0" VerticalAlignment="Top" Foreground="#FF5D1D8E" FontFamily="Bahnschrift Light" FontSize="20"/>
 
             <Label Content="Start Date&#xD;&#xA;" HorizontalAlignment="Left" Margin="90,681,0,0" VerticalAlignment="Top" Foreground="#FF5D1D8E" FontFamily="Bahnschrift Light" FontSize="20"/>
             <DatePicker x:Name="EndDate" IsTodayHighlighted="True" HorizontalAlignment="Left" Margin="1083,715,0,0" VerticalAlignment="Top" Width="296" Height="40" Foreground="#FF5D1D8E" Background="#FFF7F1FF" FontSize="20" FontFamily="Gill Sans MT" FontStyle="Italic" BorderThickness="2,2,2,2" BorderBrush="#FF5D1D8E" Padding="4,5,0,0">
@@ -75,8 +75,8 @@
                     </Style>
                 </TextBox.Resources>
             </TextBox>
-            <Label Content="Bank Account Information" HorizontalAlignment="Left" Margin="90,787,0,0" VerticalAlignment="Top" Foreground="#FF5D1D8E" FontFamily="Bahnschrift Light" FontSize="20" Height="29" Width="261"/>
-            <Label Content="*" HorizontalAlignment="Left" Margin="392,823,0,0" VerticalAlignment="Top" Foreground="#FF5D1D8E" FontSize="20" Height="37" Width="18"/>
+            <Label Content="Bank Account Information" HorizontalAlignment="Left" Margin="90,787,0,0" VerticalAlignment="Top" Foreground="#FF5D1D8E" FontFamily="Bahnschrift Light" FontSize="20"/>
+            <Label Content="*" HorizontalAlignment="Left" Margin="392,823,0,0" VerticalAlignment="Top" Foreground="#FF5D1D8E" FontSize="20"/>
 
             <TextBox x:Name="Address" HorizontalAlignment="Left" Margin="90,922,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="296" BorderThickness="2,2,2,2" BorderBrush="#FF5D1D8E" Height="40" FontSize="20" Background="#FFF7F1FF" AcceptsReturn="True" Padding="10,3,10,0">
                 <TextBox.Resources>
@@ -85,8 +85,8 @@
                     </Style>
                 </TextBox.Resources>
             </TextBox>
-            <Label Content="Address" HorizontalAlignment="Left" Margin="90,893,0,0" VerticalAlignment="Top" Foreground="#FF5D1D8E" FontFamily="Bahnschrift Light" FontSize="20" Height="29" Width="103"/>
-            <Label Content="*" HorizontalAlignment="Left" Margin="392,916,0,0" VerticalAlignment="Top" Foreground="#FF5D1D8E" FontSize="20" Height="36" Width="18"/>
+            <Label Content="Address" HorizontalAlignment="Left" Margin="90,893,0,0" VerticalAlignment="Top" Foreground="#FF5D1D8E" FontFamily="Bahnschrift Light" FontSize="20"/>
+            <Label Content="*" HorizontalAlignment="Left" Margin="392,916,0,0" VerticalAlignment="Top" Foreground="#FF5D1D8E" FontSize="20"/>
 
             <TextBox x:Name="agencyBranchCode" HorizontalAlignment="Left" Margin="90,1033,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="296" BorderThickness="2,2,2,2" BorderBrush="#FF5D1D8E" Height="40" FontSize="20" Background="#FFF7F1FF" Padding="10,3,10,0">
                 <TextBox.Resources>
@@ -95,8 +95,8 @@
                     </Style>
                 </TextBox.Resources>
             </TextBox>
-            <Label Content="Agency Branch Code" HorizontalAlignment="Left" Margin="90,997,0,0" VerticalAlignment="Top" Foreground="#FF5D1D8E" FontFamily="Bahnschrift Light" FontSize="20" Height="31" Width="208"/>
-            <Label Content="*" HorizontalAlignment="Left" Margin="392,1034,0,0" VerticalAlignment="Top" Foreground="#FF5D1D8E" FontSize="20" Height="37" Width="18"/>
+            <Label Content="Agency Branch Code" HorizontalAlignment="Left" Margin="90,997,0,0" VerticalAlignment="Top" Foreground="#FF5D1D8E" FontFamily="Bahnschrift Light" FontSize="20"/>
+            <Label Content="*" HorizontalAlignment="Left" Margin="392,1034,0,0" VerticalAlignment="Top" Foreground="#FF5D1D8E" FontSize="20"/>
 
             <TextBox x:Name="LastName" HorizontalAlignment="Left" Margin="1084,185,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="296" BorderThickness="2,2,2,2" BorderBrush="#FF5D1D8E" Height="40" FontSize="20" Background="#FFF7F1FF" Padding="10,3,10,0">
                 <TextBox.Resources>
@@ -105,8 +105,8 @@
                     </Style>
                 </TextBox.Resources>
             </TextBox>
-            <Label Content="Last Name" HorizontalAlignment="Left" Margin="1084,152,0,0" VerticalAlignment="Top" Foreground="#FF5D1D8E" FontFamily="Bahnschrift Light" FontSize="20" Height="33" Width="110"/>
-            <Label Content="*" HorizontalAlignment="Left" Margin="1386,188,0,0" VerticalAlignment="Top" Foreground="#FF5D1D8E" FontSize="20" Height="37" Width="18"/>
+            <Label Content="Last Name" HorizontalAlignment="Left" Margin="1084,152,0,0" VerticalAlignment="Top" Foreground="#FF5D1D8E" FontFamily="Bahnschrift Light" FontSize="20"/>
+            <Label Content="*" HorizontalAlignment="Left" Margin="1386,188,0,0" VerticalAlignment="Top" Foreground="#FF5D1D8E" FontSize="20"/>
 
             <TextBox x:Name="Email" HorizontalAlignment="Left" Margin="1084,291,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="296" BorderThickness="2,2,2,2" BorderBrush="#FF5D1D8E" Height="40" FontSize="20" Background="#FFF7F1FF" Padding="10,3,10,0">
                 <TextBox.Resources>
@@ -115,7 +115,7 @@
                     </Style>
                 </TextBox.Resources>
             </TextBox>
-            <Label Content="Email" HorizontalAlignment="Left" Margin="1087,258,0,0" VerticalAlignment="Top" Foreground="#FF5D1D8E" FontFamily="Bahnschrift Light" FontSize="20" Height="33" Width="66"/>
+            <Label Content="Email" HorizontalAlignment="Left" Margin="1087,258,0,0" VerticalAlignment="Top" Foreground="#FF5D1D8E" FontFamily="Bahnschrift Light" FontSize="20"/>
 
             <TextBox x:Name="PhoneNumber" HorizontalAlignment="Left" Margin="1084,397,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="296" BorderThickness="2,2,2,2" BorderBrush="#FF5D1D8E" Height="40" FontSize="20" Background="#FFF7F1FF" Padding="10,3,10,0">
                 <TextBox.Resources>
@@ -124,8 +124,8 @@
                     </Style>
                 </TextBox.Resources>
             </TextBox>
-            <Label Content="Phone Number" HorizontalAlignment="Left" Margin="1085,364,0,0" VerticalAlignment="Top" Foreground="#FF5D1D8E" FontFamily="Bahnschrift Light" FontSize="20" Height="33" Width="148"/>
-            <Label Content="*" HorizontalAlignment="Left" Margin="1386,399,0,0" VerticalAlignment="Top" Foreground="#FF5D1D8E" FontSize="20" Height="37" Width="18"/>
+            <Label Content="Phone Number" HorizontalAlignment="Left" Margin="1085,364,0,0" VerticalAlignment="Top" Foreground="#FF5D1D8E" FontFamily="Bahnschrift Light" FontSize="20"/>
+            <Label Content="*" HorizontalAlignment="Left" Margin="1386,399,0,0" VerticalAlignment="Top" Foreground="#FF5D1D8E" FontSize="20"/>
 
             <TextBox x:Name="FathersName" HorizontalAlignment="Left" Margin="1084,503,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="296" BorderThickness="2,2,2,2" BorderBrush="#FF5D1D8E" Height="40" FontSize="20" Background="#FFF7F1FF" Padding="10,3,10,0">
                 <TextBox.Resources>
@@ -134,7 +134,7 @@
                     </Style>
                 </TextBox.Resources>
             </TextBox>
-            <Label Content="Father's Name&#xA;&#xA;" HorizontalAlignment="Left" Margin="1084,470,0,0" VerticalAlignment="Top" Foreground="#FF5D1D8E" FontFamily="Bahnschrift Light" FontSize="20" Height="80" Width="144"/>
+            <Label Content="Father's Name&#xA;&#xA;" HorizontalAlignment="Left" Margin="1084,470,0,0" VerticalAlignment="Top" Foreground="#FF5D1D8E" FontFamily="Bahnschrift Light" FontSize="20"/>
 
             <TextBox x:Name="ChildNumber" HorizontalAlignment="Left" Margin="1084,609,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="296" BorderThickness="2,2,2,2" BorderBrush="#FF5D1D8E" Height="40" FontSize="20" Background="#FFF7F1FF" Padding="10,3,10,0">
                 <TextBox.Resources>
@@ -143,8 +143,7 @@
                     </Style>
                 </TextBox.Resources>
             </TextBox>
-            <Label Content="Number of Children" HorizontalAlignment="Left" Margin="1085,575,0,0" VerticalAlignment="Top" Foreground="#FF5D1D8E" FontFamily="Bahnschrift Light" FontSize="20" Height="33" Width="190"/>
-            <Label Content="*" HorizontalAlignment="Left" Margin="1386,611,0,0" VerticalAlignment="Top" Foreground="#FF5D1D8E" FontSize="20" Height="37" Width="18"/>
+            <Label Content="Number of Children" HorizontalAlignment="Left" Margin="1085,575,0,0" VerticalAlignment="Top" Foreground="#FF5D1D8E" FontFamily="Bahnschrift Light" FontSize="20"/>
 
             <Label Content="End Date"  HorizontalAlignment="Left" Margin="1087,681,0,0" VerticalAlignment="Top" Foreground="#FF5D1D8E" FontFamily="Bahnschrift Light" FontSize="20"/>
             <DatePicker x:Name="BirthDate" IsTodayHighlighted="True" HorizontalAlignment="Left" Margin="93,397,0,0" VerticalAlignment="Top" Width="296" Height="40" Foreground="#FF5D1D8E" Background="#FFF7F1FF" FontSize="20" FontFamily="Gill Sans MT" FontStyle="Italic" BorderThickness="2,2,2,2" BorderBrush="#FF5D1D8E" Padding="4,5,2,0">
@@ -163,8 +162,7 @@
                     </Style>
                 </TextBox.Resources>
             </TextBox>
-            <Label Content="Number of Family Members" HorizontalAlignment="Left" Margin="1085,787,0,0" VerticalAlignment="Top" Foreground="#FF5D1D8E" FontFamily="Bahnschrift Light" FontSize="20" Height="33" Width="262"/>
-            <Label Content="*" HorizontalAlignment="Left" Margin="1386,823,0,0" VerticalAlignment="Top" Foreground="#FF5D1D8E" FontSize="20" Height="37" Width="18"/>
+            <Label Content="Number of Family Members" HorizontalAlignment="Left" Margin="1085,787,0,0" VerticalAlignment="Top" Foreground="#FF5D1D8E" FontFamily="Bahnschrift Light" FontSize="20"/>
 
             <TextBox x:Name="Sebbaticaldays" HorizontalAlignment="Left" Margin="1084,926,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="296" BorderThickness="2,2,2,2" BorderBrush="#FF5D1D8E" Height="40" FontSize="20" Background="#FFF7F1FF" Padding="10,3,10,0">
                 <TextBox.Resources>
@@ -173,10 +171,10 @@
                     </Style>
                 </TextBox.Resources>
             </TextBox>
-            <Label Content="Sebbatical Days" HorizontalAlignment="Left" Margin="1084,893,0,0" VerticalAlignment="Top" Foreground="#FF5D1D8E" FontFamily="Bahnschrift Light" FontSize="20" Height="29" Width="163"/>
-            <Label Content="*" HorizontalAlignment="Left" Margin="1386,932,0,0" VerticalAlignment="Top" Foreground="#FF5D1D8E" FontSize="20" Height="36" Width="18"/>
+            <Label Content="Sebbatical Days" HorizontalAlignment="Left" Margin="1084,893,0,0" VerticalAlignment="Top" Foreground="#FF5D1D8E" FontFamily="Bahnschrift Light" FontSize="20"/>
+            <Label Content="*" HorizontalAlignment="Left" Margin="1386,932,0,0" VerticalAlignment="Top" Foreground="#FF5D1D8E" FontSize="20"/>
 
-            <Label Content="Position" HorizontalAlignment="Left" Margin="1083,997,0,0" VerticalAlignment="Top" Foreground="#FF5D1D8E" FontFamily="Bahnschrift Light" FontSize="20" Height="31"/>
+            <Label Content="Position" HorizontalAlignment="Left" Margin="1083,997,0,0" VerticalAlignment="Top" Foreground="#FF5D1D8E" FontFamily="Bahnschrift Light" FontSize="20"/>
             <Label Content="*" HorizontalAlignment="Left" Margin="1386,1034,0,0" VerticalAlignment="Top" Foreground="#FF5D1D8E" FontSize="20"/>
 
             <Label Content="" HorizontalAlignment="Left" Margin="1086,1307,0,0" VerticalAlignment="Top" Foreground="#FF5D1D8E" FontFamily="Gill Sans MT" FontSize="20" Height="31" Width="10"/>
@@ -188,8 +186,8 @@
                     </Style>
                 </TextBox.Resources>
             </TextBox>
-            <Label Content="Education" HorizontalAlignment="Left" Margin="90,1097,0,0" VerticalAlignment="Top" Foreground="#FF5D1D8E" FontFamily="Bahnschrift Light" FontSize="20" Height="29" Width="114"/>
-            <Label Content="*" HorizontalAlignment="Left" Margin="392,1132,0,0" VerticalAlignment="Top" Foreground="#FF5D1D8E" FontSize="20" Height="37" Width="18"/>
+            <Label Content="Education" HorizontalAlignment="Left" Margin="90,1097,0,0" VerticalAlignment="Top" Foreground="#FF5D1D8E" FontFamily="Bahnschrift Light" FontSize="20"/>
+            <Label Content="*" HorizontalAlignment="Left" Margin="392,1132,0,0" VerticalAlignment="Top" Foreground="#FF5D1D8E" FontSize="20"/>
 
             <TextBox x:Name="PreWorkPlace" HorizontalAlignment="Left" Margin="90,1237,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="296" BorderThickness="2,2,2,2" BorderBrush="#FF5D1D8E" Height="40" FontSize="20" Background="#FFF7F1FF" Padding="10,3,10,0">
                 <TextBox.Resources>
@@ -198,8 +196,7 @@
                     </Style>
                 </TextBox.Resources>
             </TextBox>
-            <Label Content="Previous Work Place" HorizontalAlignment="Left" Margin="90,1201,0,0" VerticalAlignment="Top" Foreground="#FF5D1D8E" FontFamily="Bahnschrift Light" FontSize="20" Height="31" Width="196"/>
-            <Label Content="*" HorizontalAlignment="Left" Margin="392,1238,0,0" VerticalAlignment="Top" Foreground="#FF5D1D8E" FontSize="20" Height="37" Width="18"/>
+            <Label Content="Previous Work Place" HorizontalAlignment="Left" Margin="90,1201,0,0" VerticalAlignment="Top" Foreground="#FF5D1D8E" FontFamily="Bahnschrift Light" FontSize="20"/>
 
             <TextBox x:Name="WorkExpe" HorizontalAlignment="Left" Margin="1085,1131,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="296" BorderThickness="2,2,2,2" BorderBrush="#FF5D1D8E" Height="40" FontSize="20" Background="#FFF7F1FF" AcceptsReturn="True" Padding="10,3,10,0">
                 <TextBox.Resources>
@@ -208,7 +205,7 @@
                     </Style>
                 </TextBox.Resources>
             </TextBox>
-            <Label Content="Work Experience" HorizontalAlignment="Left" Margin="1084,1098,0,0" VerticalAlignment="Top" Foreground="#FF5D1D8E" FontFamily="Bahnschrift Light" FontSize="20" Height="29" Width="176"/>
+            <Label Content="Work Experience" HorizontalAlignment="Left" Margin="1084,1098,0,0" VerticalAlignment="Top" Foreground="#FF5D1D8E" FontFamily="Bahnschrift Light" FontSize="20"/>
 
             <TextBox x:Name="PreWorkTelNum" HorizontalAlignment="Left" Margin="1085,1237,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="296" BorderThickness="2,2,2,2" BorderBrush="#FF5D1D8E" Height="40" FontSize="20" Background="#FFF7F1FF" Padding="10,3,10,0">
                 <TextBox.Resources>
@@ -217,7 +214,7 @@
                     </Style>
                 </TextBox.Resources>
             </TextBox>
-            <Label Content="Previous Work Tel Number" HorizontalAlignment="Left" Margin="1084,1201,0,0" VerticalAlignment="Top" Foreground="#FF5D1D8E" FontFamily="Bahnschrift Light" FontSize="20" Height="31" Width="254"/>
+            <Label Content="Previous Work Tel Number" HorizontalAlignment="Left" Margin="1084,1201,0,0" VerticalAlignment="Top" Foreground="#FF5D1D8E" FontFamily="Bahnschrift Light" FontSize="20"/>
 
             <TextBox x:Name="PreWorkAddress" HorizontalAlignment="Left" Margin="90,1343,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="296" BorderThickness="2,2,2,2" BorderBrush="#FF5D1D8E" Height="40" FontSize="20" Background="#FFF7F1FF" AcceptsReturn="True" Padding="10,3,10,0">
                 <TextBox.Resources>
@@ -226,7 +223,7 @@
                     </Style>
                 </TextBox.Resources>
             </TextBox>
-            <Label Content="Previous Work Address" HorizontalAlignment="Left" Margin="90,1307,0,0" VerticalAlignment="Top" Foreground="#FF5D1D8E" FontFamily="Bahnschrift Light" FontSize="20" Height="31" Width="228"/>
+            <Label Content="Previous Work Address" HorizontalAlignment="Left" Margin="90,1307,0,0" VerticalAlignment="Top" Foreground="#FF5D1D8E" FontFamily="Bahnschrift Light" FontSize="20"/>
 
             <Button x:Name="Confirm" Content="Confirm" HorizontalAlignment="Center" Height="73" Margin="0,1504,0,0" VerticalAlignment="Top" Width="450" Background="#FF5D1D8E" Foreground="White" FontSize="38" FontWeight="Bold" FontFamily="Candara" Click="Confirm_button">
                 <Button.Resources>
@@ -242,7 +239,7 @@
                     </Style>
                 </Button.Resources>
             </Button>
-            <Button Content="Cancel" HorizontalAlignment="Center" Height="73" Margin="0,1707,0,0" VerticalAlignment="Top" Width="450" Background="#FFF7F1FF" Foreground="#FF5D1D8E" FontSize="38" FontWeight="Bold" FontFamily="Candara" BorderThickness="4,4,4,4" BorderBrush="#FF5D1D8E">
+            <Button Content="Employee's List" HorizontalAlignment="Center" Height="73" Margin="0,1707,0,0" VerticalAlignment="Top" Width="450" Background="#FFF7F1FF" Foreground="#FF5D1D8E" FontSize="38" FontWeight="Bold" FontFamily="Candara" BorderThickness="4,4,4,4" BorderBrush="#FF5D1D8E" Click="EmployeeList_Btn">
                 <Button.Resources>
                     <Style TargetType="{x:Type Border}">
                         <Setter Property="CornerRadius" Value="30"/>

@@ -28,54 +28,75 @@ namespace dbproject
     {
 
 
-        public class Employee
-        {
+        /* public class Employee
+         {
 
-            public String FirstName { get; set; }
-            public String LastName { get; set; }
-            public int NationalCode { get; set; }
-            public int PhoneNumber { get; set; }
-            public string Email { get; set; }
-            public int TelNumber { get; set; }
-            public string BirthDate { get; set; }
-            public String? Address { get; set; }
-            public String FatherName { get; set; }
-            public String MaritalStatus { get; set; }
-            public String StartDate { get; set; }
-            public String EndDate { get; set; }
-            public int BankAccNum { get; set; }
-            public int ChildNum { get; set; }
-            public int FamNum { get; set; }
-            public int SebbaticalDays { get; set; }
-            public String Position { get; set; }
+             public String FirstName { get; set; }
+             public String LastName { get; set; }
+             public int NationalCode { get; set; }
+             public int PhoneNumber { get; set; }
+             public string Email { get; set; }
+             public int TelNumber { get; set; }
+             public string BirthDate { get; set; }
+             public String? Address { get; set; }
+             public String FatherName { get; set; }
+             public String MaritalStatus { get; set; }
+             public String StartDate { get; set; }
+             public String EndDate { get; set; }
+             public int BankAccNum { get; set; }
+             public int ChildNum { get; set; }
+             public int FamNum { get; set; }
+             public int SebbaticalDays { get; set; }
+             public String Position { get; set; }
 
-            public String Education { get; set; }
-            public int WorkExpe { get; set; }
-            public String PreWorkPlace { get; set; }
-            public String PreWordAddress { get; set; }
-            public String PreWordTelNum { get; set; }
-            public String AgencyBranchCode { get; set; }
+             public String Education { get; set; }
+             public int WorkExpe { get; set; }
+             public String PreWorkPlace { get; set; }
+             public String PreWordAddress { get; set; }
+             public String PreWordTelNum { get; set; }
+             public String AgencyBranchCode { get; set; }
 
-            public String Resume { get; set; }
-
-
+             public String Resume { get; set; }
 
 
 
-        }
 
+
+         }
+        */
 
 
         public Window3()
         {
             InitializeComponent();
+        }
 
-            DataGrid datagrid = new DataGrid();
+           private void Window3_Load (object sender, EventArgs e)
+        {
+            gridbind();
+        }
+
+        private void gridbind()
+        {
+            String connString = ConfigurationManager.ConnectionStrings["condb"].ConnectionString;
+            SqlConnection conn = new SqlConnection(connString);
+            
+                
+                SqlCommand cmd = new SqlCommand("Procedure_SelectAllEmployees", conn);
+                conn.Open();
+                SqlDataReader reader = cmd.ExecuteReader();
+                DataTable dt= new DataTable();
+                dt.Load(reader);
+                EmployeeTable.DataContext = dt;
+                conn.Close();
+                dt.Rows[0]
+
+                
+            
+        }
 
 
-
-
-            var ListOfemployees = new List<Employee>();
+         /*   var ListOfemployees = new List<Employee>();
             {
 
                 new Employee() { FirstName = "sara", LastName = "movahhed" };
@@ -85,7 +106,7 @@ namespace dbproject
 
 
 
-            /*
+            
              private void FNfocus (object sender, RoutedEventArgs e)
              {
 
@@ -146,10 +167,10 @@ namespace dbproject
             private void Button_Click(object sender, RoutedEventArgs e)
             {
 
-            } */
+            } 
         }
         
-       /* private void Delete_Btn_MouseEnter(object sender, MouseEventArgs e)
+        private void Delete_Btn_MouseEnter(object sender, MouseEventArgs e)
         {
             var converter = new System.Windows.Media.BrushConverter();
             var brush = (Brush) converter.ConvertFromString("#FFF7F1FF");
@@ -162,11 +183,12 @@ namespace dbproject
             var brush = (Brush)converter.ConvertFromString("#FFF7F1FF");
             Delete_Btn.Background = brush;
         }
-       */
+       
 
         private void Delete_Btn_Click(object sender, RoutedEventArgs e)
         {
 
         }
+    */
     }
 }

@@ -48,16 +48,9 @@
                 </Style>
             </Button.Resources>
         </Button>
-        <Label Content="Already have account? Login" Margin="0,739,314,0" Foreground="#FF5D1D8E" FontSize="18" FontFamily="Bahnschrift Light SemiCondensed" HorizontalAlignment="Right" Width="217" Height="39" VerticalAlignment="Top">
-            <Label.Template>
-                <ControlTemplate TargetType="Label">
-                    <TextBlock Margin="{TemplateBinding Padding}"
-                       TextDecorations="Underline"
-                       Text="{Binding Path=Content,
-                              RelativeSource={RelativeSource AncestorType=Label}}"/>
-                </ControlTemplate>
-            </Label.Template>
-        </Label>
+        <Button Content="Already have account? Login" Margin="0,750,314,0" Foreground="#FF5D1D8E" FontSize="18" FontFamily="Bahnschrift Light SemiCondensed" HorizontalAlignment="Right" Width="217" Height="39" VerticalAlignment="Top" Click="Login_Btn">
+            
+        </Button>
 
     </Grid>
 
