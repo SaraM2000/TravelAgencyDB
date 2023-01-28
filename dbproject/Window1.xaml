@@ -27,7 +27,7 @@
         <Label Content="Email" HorizontalAlignment="Left" Height="37" Margin="332,210,0,0" VerticalAlignment="Top" Width="90" FontSize="28" Foreground="#FF5D1D8E" FontFamily="Bahnschrift SemiBold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
         <Label Content="PassWord" HorizontalAlignment="Left" Height="37" Margin="332,343,0,0" VerticalAlignment="Top" Width="150" FontSize="28" Foreground="#FF5D1D8E" FontFamily="Bahnschrift SemiBold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
         <CheckBox Content="Remember Me" HorizontalAlignment="Left" Height="43" Margin="336,434,0,0" VerticalAlignment="Top" Width="166" Foreground="#FF5D1D8E" FontSize="18" Background="#FFF7F1FF" FontFamily="Bahnschrift Light"/>
-        <Label Content="Forgot PassWord?" HorizontalAlignment="Left" Height="55" Margin="531,427,0,0" VerticalAlignment="Top" Width="151" FontSize="18" Foreground="#FF5D1D8E" FontFamily="Bahnschrift Light" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">
+        <Label Content="Forgot PassWord?" HorizontalAlignment="Left" Height="55" Margin="515,427,0,0" VerticalAlignment="Top" Width="167" FontSize="18" Foreground="#FF5D1D8E" FontFamily="Bahnschrift Light" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">
             <Label.Template>
                 <ControlTemplate TargetType="Label">
                     <TextBlock Margin="{TemplateBinding Padding}"
@@ -44,15 +44,7 @@
                 </Style>
             </Button.Resources>
         </Button>
-        <Label Content="Not a member? SignUp now" HorizontalAlignment="Left" Height="55" Margin="470,607,0,0" VerticalAlignment="Top" Width="223" FontSize="18" Foreground="#FF5D1D8E" FontFamily="Bahnschrift Light" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">
-            <Label.Template>
-                <ControlTemplate TargetType="{x:Type Label}">
-                    <TextBlock Margin="{TemplateBinding Padding}"
-                        TextDecorations="Underline"
-                        Text="{Binding Content, RelativeSource={RelativeSource AncestorType={x:Type Label}}}"/>
-                </ControlTemplate>
-            </Label.Template>
-        </Label>
+        <Button Content="Not a member? SignUp now" HorizontalAlignment="Left" Height="29" Margin="449,615,0,0" VerticalAlignment="Top" Width="236" Click="Button_Click" Background="#FFF7F1FF" BorderBrush="#FFF7F1FF" Foreground="#FF5D1D8E" FontFamily="Bahnschrift Light" FontSize="18"/>
 
     </Grid>
 </Window>

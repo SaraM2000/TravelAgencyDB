@@ -48,8 +48,7 @@
                 </Style>
             </Button.Resources>
         </Button>
-        <Button Content="Already have account? Login" Margin="0,750,314,0" Foreground="#FF5D1D8E" FontSize="18" FontFamily="Bahnschrift Light SemiCondensed" HorizontalAlignment="Right" Width="217" Height="39" VerticalAlignment="Top" Click="Login_Btn">
-            
+        <Button Content="Already have account? Login" Margin="0,742,314,0" Foreground="#FF5D1D8E" FontSize="18" FontFamily="Bahnschrift Light SemiCondensed" HorizontalAlignment="Right" Width="217" Height="39" VerticalAlignment="Top" Click="Login_Btn" Background="#FFF7F1FF" BorderBrush="#FFF7F1FF">
         </Button>
 
     </Grid>

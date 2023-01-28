@@ -5,11 +5,11 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:dbproject"
         mc:Ignorable="d"
-        Title="Window3" Height="1863" Width="1730" Background="#FF7D7D7D">
+        Title="Window3" Height="1863" Width="1550" Background="#FF7D7D7D">
 
-    <ScrollViewer Margin="0,0,0,-80">
+    <ScrollViewer Margin="0,0,0,0">
 
-        <Grid Background="#FFF7F1FF" Margin="0,0,0,0">
+        <Grid Background="#FFF7F1FF" Margin="0,0,0,0" Height="1863" Width="1550">
             <Rectangle Height="116" Stroke="Black" Fill="#FF5D1D8E" VerticalAlignment="Top"/>
             <TextBox Height="64" TextWrapping="Wrap" Name="NC" Text="National Code"  FontWeight="Medium" TextAlignment="Left" VerticalAlignment="Top" Background="#FFE9E9E9" UseLayoutRounding="True" BorderThickness="1,1,1,1" SelectionTextBrush="#FFC62C2C" SelectionBrush="#FF5D1D8E" Margin="558,520,537,0" Padding="60,10,0,0" FontSize="28" Foreground="#FFACACAC" HorizontalContentAlignment="Center">
                 <TextBox.Resources>
@@ -49,7 +49,7 @@
                     </Style>
                 </Button.Resources>
             </Button>
-            <Label Content="Search Employees" FontWeight="SemiBold" Margin="540,10,576,0" VerticalAlignment="Top" Height="88" FontSize="58" Foreground="#FFF7F1FF" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+            <Label Content="Search Employees" FontWeight="SemiBold" Margin="508,10,541,0" VerticalAlignment="Top" Height="88" FontSize="58" Foreground="#FFF7F1FF" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
 
             <DataGrid Name="EmployeeTable" Width="1000" Margin="365,859,365,497" GridLinesVisibility="All"/>
 
@@ -60,7 +60,7 @@
                     </Style>
                 </Button.Resources>
             </Button>
-            <Button Content="Update" HorizontalAlignment="Center" Margin="0,1623,0,0" VerticalAlignment="Top"  Height="73" Width="430" Background="#FF5D1D8E" Foreground="White" FontSize="38" FontWeight="Bold" FontFamily="Franklin Gothic Medium">
+            <Button Content="Update" HorizontalAlignment="Center" Margin="0,1591,0,0" VerticalAlignment="Top"  Height="73" Width="430" Background="#FF5D1D8E" Foreground="White" FontSize="38" FontWeight="Bold" FontFamily="Franklin Gothic Medium">
                 <Button.Resources>
                     <Style TargetType="{x:Type Border}">
                         <Setter Property="CornerRadius" Value="30"/>
