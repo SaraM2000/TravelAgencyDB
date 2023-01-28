@@ -5,28 +5,29 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:dbproject"
         mc:Ignorable="d"
-        Title="Login" Height="1024" Width="1440" BorderBrush="#FF5D1D8E">
+        WindowStartupLocation="CenterScreen"
+        Title="Login" Height="820" Width="1000" BorderBrush="#FF5D1D8E">
     <Grid Background="#FFF7F1FF">
-        <Rectangle HorizontalAlignment="Center" Height="100" VerticalAlignment="Top" Width="1550"/>
-        <Label Content="Login" HorizontalAlignment="Center" Margin="0,150,0,0" VerticalAlignment="Top" Foreground="#FF5D1D8E" FontWeight="Bold" FontFamily="Gadugi" FontSize="62" Width="240" Height="100" HorizontalContentAlignment="Center" BorderBrush="Black"/>
-        <TextBox HorizontalAlignment="Center" Height="59" Margin="0,370,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="390" FontFamily="Gill Sans MT" FontSize="28" BorderBrush="#FF5D1D8E" BorderThickness="2,2,2,2" Text="***@yahoo.com" Foreground="#FF987CAE" Background="#FFF7F1FF">
+        <Rectangle HorizontalAlignment="Center" Height="820" VerticalAlignment="Top" Width="1000" Margin="0,0,0,0"/>
+        <Label Content="Login" HorizontalAlignment="Center" Margin="0,42,0,0" VerticalAlignment="Top" Foreground="#FF5D1D8E" FontWeight="Bold" FontFamily="Candara" FontSize="62" Width="240" Height="100" HorizontalContentAlignment="Center" BorderBrush="Black"/>
+        <TextBox HorizontalAlignment="Center" Height="45" Margin="0,256,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="350" FontFamily="Gill Sans MT" FontSize="28" BorderBrush="#FF5D1D8E" BorderThickness="2,2,2,2" Text="***@yahoo.com" Foreground="#FF987CAE" Background="#FFF7F1FF">
             <TextBox.Resources>
                 <Style TargetType="{x:Type Border}">
                     <Setter Property="CornerRadius" Value="20"/>
                 </Style>
             </TextBox.Resources>
         </TextBox>
-        <TextBox HorizontalAlignment="Center" Height="59" TextWrapping="Wrap" VerticalAlignment="Top" Width="390" FontFamily="Gill Sans MT" FontSize="20" BorderBrush="#FF5D1D8E" BorderThickness="2,2,2,2" Foreground="#FF987CAE" Background="#FFF7F1FF" Margin="0,520,0,0">
+        <TextBox HorizontalAlignment="Center" Height="45" TextWrapping="Wrap" VerticalAlignment="Top" Width="350" FontFamily="Gill Sans MT" FontSize="20" BorderBrush="#FF5D1D8E" BorderThickness="2,2,2,2" Foreground="#FF987CAE" Background="#FFF7F1FF" Margin="0,385,0,0">
             <TextBox.Resources>
                 <Style TargetType="{x:Type Border}">
                     <Setter Property="CornerRadius" Value="20"/>
                 </Style>
             </TextBox.Resources>
         </TextBox>
-        <Label Content="Email" HorizontalAlignment="Left" Height="37" Margin="524,327,0,0" VerticalAlignment="Top" Width="91" FontSize="28" Foreground="#FF5D1D8E" FontFamily="Gill Sans MT" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
-        <Label Content="PassWord" HorizontalAlignment="Left" Height="37" Margin="525,478,0,0" VerticalAlignment="Top" Width="150" FontSize="28" Foreground="#FF5D1D8E" FontFamily="Gill Sans MT" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
-        <CheckBox Content="Remember Me" HorizontalAlignment="Left" Height="43" Margin="525,590,0,0" VerticalAlignment="Top" Width="167" Foreground="#FF5D1D8E" FontSize="18" Background="#FFF7F1FF" FontFamily="Gill Sans MT"/>
-        <Label Content="Forgot PassWord?" HorizontalAlignment="Left" Height="55" Margin="756,583,0,0" VerticalAlignment="Top" Width="151" FontSize="18" Foreground="#FF5D1D8E" FontFamily="Gill Sans MT" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">
+        <Label Content="Email" HorizontalAlignment="Left" Height="37" Margin="332,210,0,0" VerticalAlignment="Top" Width="90" FontSize="28" Foreground="#FF5D1D8E" FontFamily="Bahnschrift SemiBold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <Label Content="PassWord" HorizontalAlignment="Left" Height="37" Margin="332,343,0,0" VerticalAlignment="Top" Width="150" FontSize="28" Foreground="#FF5D1D8E" FontFamily="Bahnschrift SemiBold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <CheckBox Content="Remember Me" HorizontalAlignment="Left" Height="43" Margin="336,434,0,0" VerticalAlignment="Top" Width="166" Foreground="#FF5D1D8E" FontSize="18" Background="#FFF7F1FF" FontFamily="Bahnschrift Light"/>
+        <Label Content="Forgot PassWord?" HorizontalAlignment="Left" Height="55" Margin="531,427,0,0" VerticalAlignment="Top" Width="151" FontSize="18" Foreground="#FF5D1D8E" FontFamily="Bahnschrift Light" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">
             <Label.Template>
                 <ControlTemplate TargetType="Label">
                     <TextBlock Margin="{TemplateBinding Padding}"
@@ -36,14 +37,14 @@
                 </ControlTemplate>
             </Label.Template>
         </Label>
-        <Button Content="Login" HorizontalAlignment="Center" Height="59" Margin="0,786,0,0" VerticalAlignment="Top" Width="390" Foreground="#FFF7F1FF" Background="#FF5D1D8E" FontSize="32" FontFamily="Gill Sans MT">
+        <Button Content="Login" HorizontalAlignment="Center" Height="59" Margin="0,553,0,0" VerticalAlignment="Top" Width="390" Foreground="#FFF7F1FF" Background="#FF5D1D8E" FontSize="32" FontFamily="Candara" Click="Login_button">
             <Button.Resources>
                 <Style TargetType="{x:Type Border}">
                     <Setter Property="CornerRadius" Value="30"/>
                 </Style>
             </Button.Resources>
         </Button>
-        <Label Content="Not a member? SignUp now" HorizontalAlignment="Left" Height="55" Margin="536,843,0,0" VerticalAlignment="Top" Width="223" FontSize="18" Foreground="#FF5D1D8E" FontFamily="Gill Sans MT" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">
+        <Label Content="Not a member? SignUp now" HorizontalAlignment="Left" Height="55" Margin="470,607,0,0" VerticalAlignment="Top" Width="223" FontSize="18" Foreground="#FF5D1D8E" FontFamily="Bahnschrift Light" HorizontalContentAlignment="Center" VerticalContentAlignment="Center">
             <Label.Template>
                 <ControlTemplate TargetType="{x:Type Label}">
                     <TextBlock Margin="{TemplateBinding Padding}"

@@ -31,12 +31,6 @@ namespace dbproject
     public partial class MainWindow : Window
     {
 
-
-
-
-
-
-
         public MainWindow()
         {
             InitializeComponent();
@@ -99,15 +93,13 @@ namespace dbproject
         
 
        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-       
-
-       /* private void ListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
             
-
+        }
+        private void SignUp_button(object sender, RoutedEventArgs e)
+        {
+            Employee employee = new Employee();
+            this.Visibility = Visibility.Hidden;
+            employee.Show();
         }
        */
 
