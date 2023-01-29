@@ -125,49 +125,51 @@ namespace dbproject
     }
 }
 
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+
+        }*/
+
 
 
 
          /*   var ListOfemployees = new List<Employee>();
             {
 
-                new Employee() { FirstName = "sara", LastName = "movahhed" };
+               new Employee() { FirstName = "sara", LastName = "movahhed" };
 
 
-            }
-
-
-
-            
-             private void FNfocus (object sender, RoutedEventArgs e)
-             {
-
-                FN.Text = "";
+           }
 
 
 
-             }
-            private void LNfocus(object sender, RoutedEventArgs e)
+
+            private void FNfocus (object sender, RoutedEventArgs e)
             {
 
-
-                LN.Text = "";
+               FN.Text = "";
 
 
 
             }
-
-            private void NCfocus(object sender, RoutedEventArgs e)
-            {
-
-
-                NC.Text = "";
+           private void LNfocus(object sender, RoutedEventArgs e)
+           {
 
 
-            }
+               LN.Text = "";
 
 
 
+           }
+
+           private void NCfocus(object sender, RoutedEventArgs e)
+           {
+
+
+               NC.Text = "";
+
+
+           }
 
 
 
@@ -175,50 +177,53 @@ namespace dbproject
 
 
 
-            private void ScrollBar_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
-            {
-
-            }
-
-            private void Border_Drop(object sender, DragEventArgs e)
-            {
-
-            }
-
-            private void DataGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
-            {
 
 
-            }
 
-            private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
-            {
+           private void ScrollBar_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
+           {
 
-            }
+           }
 
-            private void Button_Click(object sender, RoutedEventArgs e)
-            {
+           private void Border_Drop(object sender, DragEventArgs e)
+           {
 
-            } 
-        }
-        
-        private void Delete_Btn_MouseEnter(object sender, MouseEventArgs e)
-        {
-            var converter = new System.Windows.Media.BrushConverter();
-            var brush = (Brush) converter.ConvertFromString("#FFF7F1FF");
-            Delete_Btn.Background = brush;
-        }
+           }
 
-        private void Update_Btn_MouseEnter(object sender, MouseEventArgs e)
-        {
-            var converter = new System.Windows.Media.BrushConverter();
-            var brush = (Brush)converter.ConvertFromString("#FFF7F1FF");
-            Delete_Btn.Background = brush;
-        }
-       
+           private void DataGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
+           {
 
-        private void Delete_Btn_Click(object sender, RoutedEventArgs e)
-        {
+
+           }
+
+           private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
+           {
+
+           }
+
+           private void Button_Click(object sender, RoutedEventArgs e)
+           {
+
+           } 
+       }
+
+       private void Delete_Btn_MouseEnter(object sender, MouseEventArgs e)
+       {
+           var converter = new System.Windows.Media.BrushConverter();
+           var brush = (Brush) converter.ConvertFromString("#FFF7F1FF");
+           Delete_Btn.Background = brush;
+       }
+
+       private void Update_Btn_MouseEnter(object sender, MouseEventArgs e)
+       {
+           var converter = new System.Windows.Media.BrushConverter();
+           var brush = (Brush)converter.ConvertFromString("#FFF7F1FF");
+           Delete_Btn.Background = brush;
+       }
+
+
+       private void Delete_Btn_Click(object sender, RoutedEventArgs e)
+       {
 
         }
     */

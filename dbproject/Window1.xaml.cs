@@ -36,5 +36,11 @@ namespace dbproject
             SignUp_employees.Show();
         }
 
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow Search_employees = new MainWindow();
+            this.Visibility = Visibility.Hidden;
+            Search_employees.Show();
+        }
     }
 }

@@ -7,9 +7,9 @@
         mc:Ignorable="d"
         Title="Search Employees"  Background="#FF7D7D7D" Height="1515">
 
-    <ScrollViewer Margin="0,0,0,-80">
+    <ScrollViewer Margin="0,0,0,0">
 
-        <Grid Background="#FFF7F1FF" Margin="0,0,0,0">
+        <Grid Background="#FFF7F1FF" Margin="0,0,0,0" Height="1863" Width="1550">
             <Rectangle Height="116" Stroke="Black" Fill="#FF5D1D8E" VerticalAlignment="Top"/>
             <TextBox TextWrapping="Wrap" Name="NC" Text="National Code"  FontWeight="Medium" TextAlignment="Left" Background="#FFE9E9E9" UseLayoutRounding="True" BorderThickness="1,1,1,1" SelectionTextBrush="#FFC62C2C" SelectionBrush="#FF5D1D8E" Margin="558,520,537,995" Padding="60,10,0,0" FontSize="28" Foreground="#FFACACAC" HorizontalContentAlignment="Center">
                 <TextBox.Resources>
