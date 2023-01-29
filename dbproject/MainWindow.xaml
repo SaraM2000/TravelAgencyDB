@@ -16,7 +16,7 @@
                 </Style>
             </TextBox.Resources>
         </TextBox>
-        <TextBox Height="45" TextWrapping="Wrap" VerticalAlignment="Top" Background="#FFF7F1FF" BorderBrush="#FF5D1D8E" BorderThickness="4,4,4,4" Margin="0,330,0,0" HorizontalAlignment="Center" Width="350">
+        <TextBox TextWrapping="Wrap" Background="#FFF7F1FF" BorderBrush="#FF5D1D8E" BorderThickness="4,4,4,4" Margin="0,330,0,445" HorizontalAlignment="Center" Width="350">
             <TextBox.Resources>
                 <Style TargetType="{x:Type Border}">
                     <Setter Property="CornerRadius" Value="20"/>
@@ -48,8 +48,8 @@
                 </Style>
             </Button.Resources>
         </Button>
-        <Button Content="Already have account? Login" Margin="0,750,314,0" Foreground="#FF5D1D8E" FontSize="18" FontFamily="Bahnschrift Light SemiCondensed" HorizontalAlignment="Right" Width="217" Height="39" VerticalAlignment="Top" Click="Login_Btn">
-            
+        <Button Content="Already have account? Login" Margin="0,750,314,0" Foreground="#FF5D1D8E" FontSize="18" FontFamily="Bahnschrift Light SemiCondensed" HorizontalAlignment="Right" VerticalAlignment="Top" Click="Login_Btn" BorderBrush="#FFF7F1FF" Background="#FFF7F1FF">
+
         </Button>
 
     </Grid>

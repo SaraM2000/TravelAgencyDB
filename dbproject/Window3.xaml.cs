@@ -69,32 +69,63 @@ namespace dbproject
         public Window3()
         {
             InitializeComponent();
+            binddatagrid();
+
         }
 
-           private void Window3_Load (object sender, EventArgs e)
+        private void binddatagrid()
         {
-            gridbind();
-        }
+         
+            SqlConnection conn = new SqlConnection();
+            conn.ConnectionString = ConfigurationManager.ConnectionStrings["condb"].ConnectionString;
+            conn.Open();
 
-        private void gridbind()
+
+            SqlCommand cmd = new SqlCommand();
+            cmd.CommandText = "Procedure_SelectAllEmployees";
+            cmd.Connection = conn;
+            
+            SqlDataAdapter adapter = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable("Employees");
+            //cmd.ExecuteNonQuery();
+          
+            
+          // var reader = cmd.ExecuteReader();
+          
+          adapter.Fill(dt);
+
+
+          //  dt.Load(reader);
+            EmployeeTable.ItemsSource = dt.DefaultView;
+          //  conn.Close();
+            
+
+ 
+            
+            
+            
+
+            /* for (int i = 0; i < dt.Rows.Count; i++)
+             {
+                 EmployeeTable.Items.Add(dt.Rows[i][2] + " " + dt.Rows[i][3]);
+             }
+
+
+
+             */
+
+        }
+      /*  private readonly String[] positions =
+          private void BindListBox()
         {
-            String connString = ConfigurationManager.ConnectionStrings["condb"].ConnectionString;
-            SqlConnection conn = new SqlConnection(connString);
-            
-                
-                SqlCommand cmd = new SqlCommand("Procedure_SelectAllEmployees", conn);
-                conn.Open();
-                SqlDataReader reader = cmd.ExecuteReader();
-                DataTable dt= new DataTable();
-                dt.Load(reader);
-            
-                
-
-                 
-                 conn.Close();
-
+            Position.ItemsSource = positions;
 
         }
+      */
+    }
+}
+
+
 
 
          /*   var ListOfemployees = new List<Employee>();
@@ -191,5 +222,5 @@ namespace dbproject
 
         }
     */
-    }
-}
+   
+

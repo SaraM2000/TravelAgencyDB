@@ -29,6 +29,12 @@ namespace dbproject
             this.Visibility = Visibility.Hidden;
             Search_employees.Show();
         }
+        private void SignUp_Btn(object sender, RoutedEventArgs e)
+        {
+            MainWindow SignUp_employees = new MainWindow();
+            this.Visibility = Visibility.Hidden;
+            SignUp_employees.Show();
+        }
 
     }
 }
