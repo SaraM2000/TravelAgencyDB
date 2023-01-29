@@ -71,9 +71,27 @@ namespace dbproject
             InitializeComponent();
             binddatagrid();
 
+
         }
 
         private void binddatagrid()
+        }
+
+        private void binddatagrid()
+        {
+            SqlConnection con = new SqlConnection();
+            con.ConnectionString = ConfigurationManager.ConnectionStrings["condb"].ConnectionString;
+            con.Open();
+            SqlCommand cmd = new SqlCommand();
+            cmd.CommandText = "select * from [EMPLOYEE]";
+            cmd.Connection = con;
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable("Employees");
+            da.Fill(dt);
+            EmployeeTable.ItemsSource = dt.DefaultView;
+        }
+
+        
         {
          
             SqlConnection conn = new SqlConnection();
@@ -125,16 +143,21 @@ namespace dbproject
     }
 }
 
+
+
         private void Button_Click(object sender, RoutedEventArgs e)
         {
 
-        }*/
+
+        }
+    
+   
+
+        }
 
 
-
-
-         /*   var ListOfemployees = new List<Employee>();
-            {
+        /*   var ListOfemployees = new List<Employee>();
+           {
 
                new Employee() { FirstName = "sara", LastName = "movahhed" };
 
@@ -225,7 +248,8 @@ namespace dbproject
        private void Delete_Btn_Click(object sender, RoutedEventArgs e)
        {
 
-        }
-    */
-   
+       }
+   */
+    }
+}
 
