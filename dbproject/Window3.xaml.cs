@@ -74,48 +74,21 @@ namespace dbproject
 
         }
 
-        private void binddatagrid()
-        }
-
-        private void binddatagrid()
-        {
-            SqlConnection con = new SqlConnection();
-            con.ConnectionString = ConfigurationManager.ConnectionStrings["condb"].ConnectionString;
-            con.Open();
-            SqlCommand cmd = new SqlCommand();
-            cmd.CommandText = "select * from [EMPLOYEE]";
-            cmd.Connection = con;
-            SqlDataAdapter da = new SqlDataAdapter(cmd);
-            DataTable dt = new DataTable("Employees");
-            da.Fill(dt);
-            EmployeeTable.ItemsSource = dt.DefaultView;
-        }
-
         
+
+        private void binddatagrid()
         {
-         
+            
             SqlConnection conn = new SqlConnection();
             conn.ConnectionString = ConfigurationManager.ConnectionStrings["condb"].ConnectionString;
             conn.Open();
-
-
             SqlCommand cmd = new SqlCommand();
             cmd.CommandText = "Procedure_SelectAllEmployees";
             cmd.Connection = conn;
-            
             SqlDataAdapter adapter = new SqlDataAdapter(cmd);
             DataTable dt = new DataTable("Employees");
-            //cmd.ExecuteNonQuery();
-          
-            
-          // var reader = cmd.ExecuteReader();
-          
-          adapter.Fill(dt);
-
-
-          //  dt.Load(reader);
+            adapter.Fill(dt);
             EmployeeTable.ItemsSource = dt.DefaultView;
-          //  conn.Close();
             
 
  
@@ -145,15 +118,16 @@ namespace dbproject
 
 
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+     /*   private void Button_Click(object sender, RoutedEventArgs e)
         {
 
 
         }
+     */
     
    
 
-        }
+        
 
 
         /*   var ListOfemployees = new List<Employee>();
@@ -250,6 +224,5 @@ namespace dbproject
 
        }
    */
-    }
-}
+ 
 
